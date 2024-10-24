@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE recipes SYSTEM "1.dtd">
+<recipes>
+    <recipe servings="1" >
+        <name>Pan con ajo y perejil</name>
+        <ingredients>
+            <ingredient quantity="3">pan</ingredient>
+            <ingredient>ajo</ingredient>
+            <ingredient quantity="2" measuring_unit="grams">perejil</ingredient>
+        </ingredients>
+        <instructions>
+            Cortar el pan en rebanadas; tostarlo; pelar el ajo; fortarlo en el pan; trocear el perejil; espolvorear sobre el pan
+        </instructions>
+    </recipe>
+</recipes>

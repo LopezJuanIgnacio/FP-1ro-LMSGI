@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mundiales-de-futbol>
+    <mundial>
+        <pais> España </pais>
+        <anio> 1982 </anio>
+    </mundial>
+    <mundial>
+        <pais> México </pais>
+        <anio> 1986 </anio>
+    </mundial>
+</mundiales-de-futbol>

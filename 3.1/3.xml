@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE arboles SYSTEM "DTD/3.dtd">
+<arboles>
+  <arbol>
+    <nombre>
+      <nombre_cientifico>Acer monspessulanum</nombre_cientifico>
+      <nombre_comun>Arce de Montpellier</nombre_comun>
+      <nombre_comun>Arce menor</nombre_comun>
+    </nombre>
+    <vegetacion>Caducifolio</vegetacion>
+    <altura>
+      <min>6</min>
+      <max>10</max>
+    </altura>
+    <forma_estructura>
+      <copa>Esférica</copa>
+      <tronco>Recto con bifurcaciones</tronco>
+      <ramaje>Colgante</ramaje>
+    </forma_estructura>
+    <colores>
+      <color_primavera>
+        <haz>Verde brillante</haz>
+        <enves>Verde blanquecino</enves>
+      </color_primavera>
+    </colores>
+    <resistencia_heladas>
+      <tipo_helada>Fuertes</tipo_helada>
+      <temperatura_min>-15</temperatura_min>
+    </resistencia_heladas>
+  </arbol>
+  <arbol>
+    <nombre>
+      <nombre_cientifico>Olea europea</nombre_cientifico>
+      <nombre_comun>Olivo</nombre_comun>
+    </nombre>
+    <vegetacion>Perenne</vegetacion>
+    <altura>
+      <min>8</min>
+      <max>15</max>
+    </altura>
+    <forma_estructura>
+      <copa>Irregular</copa>
+      <tronco>Irregular con bifurcaciones</tronco>
+      <ramaje>Tortuoso</ramaje>
+    </forma_estructura>
+    <colores>
+      <color_primavera>
+        <haz>Verde oscuro</haz>
+        <enves>Verde plateado</enves>
+      </color_primavera>
+    </colores>
+    <resistencia_heladas>
+      <tipo_helada>Medias</tipo_helada>
+      <temperatura_min>-10</temperatura_min>
+    </resistencia_heladas>
+  </arbol>
+  <arbol>
+    <nombre>
+      <nombre_cientifico>Platanus orientalis</nombre_cientifico>
+      <nombre_comun>Plátano</nombre_comun>
+    </nombre>
+    <vegetacion>Caducifolio</vegetacion>
+    <altura>
+      <min>20</min>
+      <max>25</max>
+    </altura>
+    <forma_estructura>
+      <copa>Ovoidal</copa>
+      <tronco>Recto</tronco>
+      <ramaje>Expandido</ramaje>
+    </forma_estructura>
+    <colores>
+      <color_primavera>
+        <haz>Verde medio</haz>
+        <enves>Verde claro</enves>
+      </color_primavera>
+      <color_otoño>Ocre
+      </color_otoño>
+    </colores>
+    <resistencia_heladas>
+      <tipo_helada>Fuertes</tipo_helada>
+      <temperatura_min>-20</temperatura_min>
+    </resistencia_heladas>
+  </arbol>
+</arboles>

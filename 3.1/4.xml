@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE informe [
+    <!ELEMENT informe (cabecera, ventas)>
+    <!ELEMENT cabecera (fecha, descripcion?)>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT ventas (norte, centro, sur)>
+    <!ELEMENT norte (libros_vendidos+)>
+    <!ELEMENT centro (libros_vendidos+)>
+    <!ELEMENT sur (libros_vendidos+)>
+    <!ELEMENT libros_vendidos EMPTY>
+    <!ATTLIST libros_vendidos trimestre (1 | 2 | 3 | 4) #REQUIRED>
+    <!ATTLIST libros_vendidos unidades CDATA "SIN_DATOS">
+]>
+<informe>
+    <cabecera>
+        <fecha>30/12/2021</fecha>
+        <descripcion>informe de ventas para las regiones Norte, Centro y Sur</descripcion>
+    </cabecera>
+    <ventas>
+        <norte>
+            <libros_vendidos trimestre="1" unidades="24000" />
+            <libros_vendidos trimestre="2" unidades="38600" />
+            <libros_vendidos trimestre="3"/>
+            <libros_vendidos trimestre="4"/>
+        </norte>
+        <centro>
+            <libros_vendidos trimestre="1"/>
+            <libros_vendidos trimestre="2" unidades="16080" />
+            <libros_vendidos trimestre="3" unidades="25000" />
+            <libros_vendidos trimestre="4" unidades="29000" />
+        </centro>
+        <sur>
+            <libros_vendidos trimestre="1" unidades="27000" />
+            <libros_vendidos trimestre="2" unidades="31400" />
+            <libros_vendidos trimestre="3" unidades="40100" />
+            <libros_vendidos trimestre="4" unidades="30000" />
+        </sur>
+    </ventas>
+</informe>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cartelera SYSTEM "DTD/5.dtd">
+<cartelera>
+    <pelicula codigo="p1" duracion="130">
+        <titulo>SONIC 3: La película</titulo>
+        <titulo_original>Sonic the Hedgehog 3</titulo_original>
+        <pais>Estados Unidos</pais>
+        <generos>
+            <genero>Animación</genero>
+            <genero>Comedia</genero>
+            <genero>Aventura</genero>
+        </generos>
+        <clasificacion edad="tp" />
+        <sinopsis>Sonic, Tails y Knuckles se enfrentarán al Dr. Robotnik antes de que
+            conquiste el mundo. Robotnik tendrá un nuevo aliado: Shadow.</sinopsis>
+        <direccion>Jeff Fowler</direccion>
+        <reparto>
+            <actor>James Marsden</actor>
+            <actor>Jim Carrey</actor>
+            <actor>Ben Schwartz</actor>
+            <actriz>Colleen O'Shaughnessey</actriz>
+            <actor>Idris Elba</actor>
+            <actor>Keanu Reeves</actor>
+        </reparto>
+        <web>https://www.sonicthehedgehogmovie.com</web>
+        <cartel>caratulas/sonic3.jpg</cartel>
+    </pelicula>
+    <pelicula codigo="p17" duracion="100" año="2024">
+        <titulo>La infiltrada</titulo>
+        <pais>España</pais>
+        <generos>
+            <genero>Suspense</genero>
+        </generos>
+        <sin_clasificar />
+        <sinopsis>Con solo 20 años, Aránzazu logró unirse a la banda ETA,
+            convirtiéndose en la única mujer en compartir un piso con los líderes de la banda.
+            Gracias a dicha infiltración, la Policía Nacional pudo desmantelar el comando
+            Donosti.</sinopsis>
+        <direccion>Atrantxa Echevarría</direccion>
+        <reparto>
+            <actor>Luis Tosar</actor>
+            <actriz>Carolina Yuste</actriz>
+            <actor>Pedro Casablanc</actor>
+            <actor>Víctor Clavijo</actor>
+        </reparto>
+    </pelicula>
+</cartelera>

@@ -1,0 +1,21 @@
+<!ELEMENT arboles (arbol+) >
+<!ELEMENT arbol (nombre, vegetacion, altura, forma_estructura, colores, resistencia_heladas) >
+<!ELEMENT nombre (nombre_cientifico, nombre_comun+) >
+<!ELEMENT nombre_cientifico (#PCDATA)>
+<!ELEMENT nombre_comun (#PCDATA)>
+<!ELEMENT vegetacion (#PCDATA)>
+<!ELEMENT altura (min, max)>
+<!ELEMENT min (#PCDATA)>
+<!ELEMENT max (#PCDATA)>
+<!ELEMENT forma_estructura (copa,tronco,ramaje)>
+<!ELEMENT copa (#PCDATA)>
+<!ELEMENT tronco (#PCDATA)>
+<!ELEMENT ramaje (#PCDATA)>
+<!ELEMENT colores (color_primavera, color_otoño?) >
+<!ELEMENT color_primavera (haz, enves)>
+<!ELEMENT haz (#PCDATA)>
+<!ELEMENT enves (#PCDATA)>
+<!ELEMENT color_otoño (#PCDATA)>
+<!ELEMENT resistencia_heladas (tipo_helada, temperatura_min)>
+<!ELEMENT tipo_helada (#PCDATA)>
+<!ELEMENT temperatura_min (#PCDATA)>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factura id="999">
+    <datos-emisor>
+        <nombre>Equipos Digitales, S.L</nombre>
+        <direccion>Av. Valladolid</direccion>
+        <provincia>Madrid</provincia>
+        <codigoPostal>28015</codigoPostal>
+        <telefono>917776688</telefono>
+        <NIF>Q-9876543</NIF>
+        <email>billing@equiposdigitales.es</email>
+    </datos-emisor>
+    <datos-pedido>
+        <fecha>12-01-2005</fecha>
+        <numero>731</numero>
+        <forma-pago>EFECTIVO</forma-pago>
+    </datos-pedido>
+    <datos-cliente>
+        <codigo>879</codigo>
+        <nombre>Darío Bueno Gutiérrez</nombre>
+        <direccion>Av. Oporto nº7, 4ºD</direccion>
+        <Localidad>Madrid</Localidad>
+        <codigoPostal>28043</codigoPostal>
+        <Provincia>Madrid</Provincia>
+    </datos-cliente>
+    <datos-factura>
+        <productos>
+            <producto>
+                <referencia>MII93000F/8</referencia>
+                <descripcion>MICRO PENTIUM IV 300MHz FB800</descripcion>
+                <cant>1</cant>
+                <precio>230,00</precio>
+                <IVA>16,0</IVA>
+                <importe>266,80</importe>
+            </producto>
+            <producto>
+                <referencia>MB8QDIP4</referencia>
+                <descripcion>PLACA BASE QDI P4 </descripcion>
+                <cant>1</cant>
+                <precio>180,00</precio>
+                <IVA>16,0</IVA>
+                <importe>208,80</importe>
+            </producto>
+            <producto>
+                <referencia>MEDD512M32</referencia>
+                <descripcion>DIMM DDR 512MB 3200</descripcion>
+                <cant>2</cant>
+                <precio>40,00</precio>
+                <IVA>16,0</IVA>
+                <importe>92,80</importe>
+            </producto>
+            <producto>
+                <referencia>HD250GSA7</referencia>
+                <descripcion>DISCO DURO 250GB SATA 7200</descripcion>
+                <cant>4</cant>
+                <precio>120,00</precio>
+                <IVA>16,0</IVA>
+                <importe>556,80</importe>
+            </producto>
+        </productos>
+        <base-imponible>970,00</base-imponible>
+        <IVA>16,0</IVA>
+        <couta-IVA>155,20</couta-IVA>
+        <total>1125,20</total>
+    </datos-factura>
+</factura>

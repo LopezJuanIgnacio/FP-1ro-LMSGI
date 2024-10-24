@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE animals [
+    <!ELEMENT animals (animal)*>
+    <!ELEMENT animal (name)>
+    <!ELEMENT name (#PCDATA)>
+    <!NOTATION png SYSTEM "image/png">
+    <!ATTLIST animal
+        image CDATA #IMPLIED
+        imgType NOTATION (png) #IMPLIED>
+]>
+<animals>
+    <animal image="dog.png" imgType="png">
+        <name>Dog</name>
+    </animal>
+</animals>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arboles>
+    <arbol>
+        <nombre>Acer monspessulanum</nombre>
+        <nombre-comun>Arce de Montpellier, Arce menor</nombre-comun>
+        <vegetacion>Caducifolio</vegetacion>
+        <altura>De 6-10 metros</altura>
+        <forma-estructura>
+            <copa>Esférica</copa>
+            <tronco-principal>Recto con bifurcaciones</tronco-principal>
+            <ramaje>Colgante</ramaje>
+        </forma-estructura>
+        <color-primavera>
+            <haz>Verde brillante</haz>
+            <enves>Verde blanquecino</enves>
+        </color-primavera>
+        <resistencia-heladas>Heladas fuertes (hasta -15ºC)</resistencia-heladas>
+    </arbol>
+
+    <arbol>
+        <nombre>Olea europea</nombre>
+        <nombre-comun>Olivo</nombre-comun>
+        <vegetacion>Perenne</vegetacion>
+        <altura>De 8-15 metros</altura>
+        <forma-estructura>
+            <copa>Irregular</copa>
+            <tronco-principal>Irregular con bifurcaciones</tronco-principal>
+            <ramaje>Tortuoso</ramaje>
+        </forma-estructura>
+        <color-primavera>
+            <haz>Verde oscuro</haz>
+            <enves>Verde plateado</enves>
+        </color-primavera>
+        <resistencia-heladas>Heladas medias (hasta -10ºC)</resistencia-heladas>
+    </arbol>
+
+    <arbol>
+        <nombre>Platanus orientalis</nombre>
+        <nombre-comun>Plátano</nombre-comun>
+        <vegetacion>Caducifolio</vegetacion>
+        <altura>De 20-25 metros</altura>
+        <forma-estructura>
+            <copa>Ovoidal</copa>
+            <tronco-principal>Recto</tronco-principal>
+            <ramaje>Expandido</ramaje>
+        </forma-estructura>
+        <color-primavera>
+            <haz>Verde medio</haz>
+            <enves>Verde claro</enves>
+        </color-primavera>
+        <color_otono>Ocre</color_otono>
+        <resistencia-heladas>Heladas fuertes (hasta -20ºC)</resistencia-heladas>
+    </arbol>
+</arboles>

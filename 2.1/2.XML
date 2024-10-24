@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<geografia-mundial>
+    <pais>
+        <pais>España</pais>
+        <continente>Europa</continente>
+        <capital nombre="Madrid"></capital>
+    </pais>
+    <pais>
+        <pais>Francia</pais>
+        <continente>Europa</continente>
+        <capital nombre="París"></capital>
+    </pais>
+</geografia-mundial>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empresa>
+    <personas>
+        <persona>
+            <nombre>Ana López</nombre>
+            <area>Programación</area>
+            <id>1</id>
+        </persona>
+        <persona>
+            <nombre>Carlos Pérez</nombre>
+            <area>Diseño</area>
+            <id>2</id>
+        </persona>
+        <persona>
+            <nombre>Laura Martínez</nombre>
+            <area>Contenidos</area>
+            <id>3</id>
+        </persona>
+    </personas>
+
+    <proyectos>
+        <proyecto estado="finalizado">
+            <descripcion>Ecommerce</descripcion>
+            <fecha_comienzo>2023-01-15</fecha_comienzo>
+            <duracion_estimada>6 meses</duracion_estimada>
+            <participantes>
+                <persona id="1" />
+                <persona id="2" />
+            </participantes>
+            <coste_total>15000</coste_total>
+        </proyecto>
+
+        <proyecto estado="suspendido">
+            <descripcion>Plataforma de educación en línea</descripcion>
+            <fecha_comienzo>2022-10-01</fecha_comienzo>
+            <duracion_estimada>12 meses</duracion_estimada>
+            <participantes>
+                <persona id="2" />
+                <persona id="3" />
+            </participantes>
+            <presupuesto>30000</presupuesto>
+        </proyecto>
+
+        <proyecto>
+            <descripcion>Blog corporativo de marketing</descripcion>
+            <fecha_comienzo>2024-02-01</fecha_comienzo>
+            <duracion_estimada>4 meses</duracion_estimada>
+            <participantes>
+                <persona id="1" />
+                <persona id="3" />
+            </participantes>
+            <presupuesto>5000</presupuesto>
+        </proyecto>
+
+        <proyecto>
+            <descripcion>Rediseño de la página web corporativa</descripcion>
+            <fecha_comienzo>2024-07-01</fecha_comienzo>
+            <duracion_estimada>5 meses</duracion_estimada>
+            <participantes>
+                <persona id="1" />
+                <persona id="2" />
+                <persona id="3" />
+            </participantes>
+            <presupuesto>10000</presupuesto>
+        </proyecto>
+    </proyectos>
+</empresa>

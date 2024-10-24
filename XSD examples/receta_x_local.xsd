@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="recetas"><!--APERTURA ELEMENTO RAÍZ-->
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="receta" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="ingredientes"><!--ELEMENTO <ingredientes>-->
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ingrediente" maxOccurs="unbounded">
+                      <xs:complexType><!--CONTIENE TEXTO Y ATRIBUTOS-->
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string"><!--TIPO SIMPLE DEL "TEXTO CONTENIDO"-->
+                            <xs:attribute name="cantidad" type="xs:decimal"/><!--TIPO SIMPLE DE ESTE ATRIBUTO-->
+                            <xs:attribute name="unidad" type="xs:string"/><!--TIPO SIMPLE DE ESTE ATRIBUTO-->
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="preparacion" type="xs:string"/>
+            </xs:sequence><!--ATRIBUTOS SIEMPRE DESPUÉS DE ELEMENTOS (de <receta>)-->
+            <xs:attribute name="numRaciones"  type="xs:positiveInteger"/>
+             <xs:attribute name="dificultad" default="media">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="baja"/>
+                  <xs:enumeration value="media"/>
+                  <xs:enumeration value="alta"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element><!--CIERRE ELEMENTO RAÍZ -->
+</xs:schema><!--CIERRE DEL ESQUEMA-->

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mensaje SYSTEM "DTD/2.dtd">
+<mensaje>
+  <remitente>
+    <nombre>Will Smith</nombre>
+    <email>will@overbrookent.com</email>
+  </remitente>
+  <destinatario>
+    <nombre>Chris Rock</nombre>
+    <email>chrissy@chrisrock.com</email>
+  </destinatario>
+  <asunto>Hola Chris</asunto>
+  <cuerpo>
+    <parrafo>Hola, ¿qué tal?</parrafo>
+    <parrafo>Oye, que no me contestas los guasaps. A ver si llamas y quedamos.</parrafo>
+    <parrafo>Un saludo</parrafo>
+  </cuerpo>
+</mensaje>

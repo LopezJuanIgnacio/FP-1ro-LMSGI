@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prediccion_meteorologica>
+    <fecha>01/10/2024</fecha>
+    <ciudad>Valencia</ciudad>
+    <precipitaciones_probabilidad>10</precipitaciones_probabilidad>
+    <estado-cielo>Nubosidad abundante durante la mayor parte del día</estado-cielo>
+    <viento>
+        <direccion>Sudeste</direccion>
+        <velocidad>8 km/h</velocidad>
+    </viento>
+    <temperaturas>
+        <maxima>28</maxima>
+        <minima>18</minima>
+    </temperaturas>
+    <sensacion_termica>
+        <maxima>30</maxima>
+        <minima>18</minima>
+    </sensacion_termica>
+    <humedad_relativa>49%</humedad_relativa>
+    <indice_uv>4</indice_uv>
+    <horario_sol>
+        <salida>07:56</salida>
+        <puesta>19:45</puesta>
+    </horario_sol>
+</prediccion_meteorologica>

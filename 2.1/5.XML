@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mediosDeTransporte>
+    <bicicleta velocidad="v100km/h" />
+    <patinete velocidad-maxima="50 km/h" />
+    <coche velocidad="v200km/h" />
+</mediosDeTransporte>

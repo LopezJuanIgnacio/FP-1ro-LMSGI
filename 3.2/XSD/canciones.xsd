@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="canciones">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cancion" maxOccurs="unbounded" minOccurs="1">
+                    <xs:complexType>
+                        <xs:all>
+                            <xs:element name="titulo" type="xs:string" maxOccurs="1"/>
+                            <xs:element name="compositores">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="compositor" maxOccurs="unbounded"
+                                            minOccurs="1">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="nombre" type="xs:string" />
+                                                    <xs:element name="apellidos" type="xs:string"
+                                                        minOccurs="0" maxOccurs="1" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                            <xs:unique name="uniqueApellidos">
+                                                <xs:selector xpath="compositor" />
+                                                <xs:field xpath="apellidos" />
+                                            </xs:unique>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="disco" type="xs:string" />
+                            <xs:element name="sello" type="xs:string" />
+                            <xs:element name="artistas">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="artista" type="xs:string"
+                                            maxOccurs="unbounded" minOccurs="1" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:all>
+                        <xs:attribute name="duracion" type="xs:positiveInteger" use="optional" />
+                        <xs:attribute name="año" type="xs:gYear" use="required" />
+                    </xs:complexType>
+                    <xs:unique name="uniqueTitulo">
+                        <xs:selector xpath="cancion" />
+                        <xs:field xpath="titulo" />
+                    </xs:unique>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

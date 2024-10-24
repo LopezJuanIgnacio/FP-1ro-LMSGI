@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recetas xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="receta_x_local.xsd">
+  <receta numRaciones="1" >
+    <nombre>Pan con ajo y perejil</nombre>
+    <ingredientes>
+      <ingrediente>Pan</ingrediente>
+      <ingrediente>Ajo</ingrediente>
+      <ingrediente cantidad="1" unidad="puñao">Perejil</ingrediente>
+    </ingredientes>
+    <preparacion>Cortar el pan en rebanadas; tostarlo; pelar el ajo; fortarlo en el pan; trocear el perejil; espolvorear sobre el pan</preparacion>
+  </receta>
+</recetas>

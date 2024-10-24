@@ -1,0 +1,10 @@
+<!ELEMENT recipes (recipe+)>
+<!ELEMENT recipe (name, ingredients, instructions)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT ingredients (ingredient+)>
+<!ELEMENT ingredient (#PCDATA)>
+<!ELEMENT instructions (#PCDATA)>
+<!ATTLIST recipe servings CDATA #REQUIRED>
+<!ATTLIST recipe difficulty (low | medium | high) "medium">
+<!ATTLIST ingredient quantity CDATA #IMPLIED>
+<!ATTLIST ingredient measuring_unit CDATA #IMPLIED>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<canciones xsi:noNamespaceSchemaLocation="XSD/canciones.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <cancion duracion="4:08" año="1979">
+    <titulo>Video Killed the Radio Star</titulo>
+    <compositores>
+      <compositor>
+        <nombre>Geoff</nombre>
+        <apellidos>Downes</apellidos>
+      </compositor>
+      <compositor>
+        <nombre>Trevor</nombre>
+        <apellidos>Horn</apellidos>
+      </compositor>
+      <compositor>
+        <nombre>Bruce</nombre>
+        <apellidos>Woolley</apellidos>
+      </compositor>
+    </compositores>
+    <disco>The Age of Plastic</disco>
+    <sello>Island</sello>
+    <artistas>
+      <artista>Buggles</artista>
+    </artistas>
+  </cancion>
+</canciones>

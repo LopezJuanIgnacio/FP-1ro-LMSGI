@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marcadores xsi:noNamespaceSchemaLocation="1.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <pagina>
+        <nombre>Google</nombre>
+        <descripcion>Motor de búsqueda</descripcion>
+        <url>http://www.google.com</url>
+        <veces>100</veces>
+    </pagina>
+    <pagina>
+        <nombre>Yahoo</nombre>
+        <descripcion>Motor de búsqueda</descripcion>
+        <url>http://www.yahoo.com</url>
+        <veces>50</veces>
+    </pagina>
+    <pagina>
+        <nombre>MSN</nombre>
+        <descripcion>Motor de búsqueda</descripcion>
+        <url>http://www.msn.com</url>
+        <veces>25</veces>
+    </pagina>
+</marcadores>

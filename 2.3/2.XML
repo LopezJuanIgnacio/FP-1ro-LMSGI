@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<banco>
+    <clientes>
+        <cliente NIF="12345678A">
+            <nombre>Ana López</nombre>
+            <prestamos />
+        </cliente>
+        <cliente NIF="87654321B">
+            <nombre>Carlos Pérez</nombre>
+            <prestamos>
+                <prestamo>
+                    <cantidad>10000</cantidad>
+                    <interes>5</interes>
+                    <plazo>12</plazo>
+                </prestamo>
+            </prestamos>
+        </cliente>
+    </clientes>
+    <sucursales>
+        <sucursal codigo="001">
+            <cuentas>
+                <cuenta iban="ES7621000813610123456789">
+                    <titulares>
+                        <titular NIF="12345678A">
+                            <permisos>
+                                <permiso>transferencias nacionales</permiso>
+                                <permiso>transferencias internacionales</permiso>
+                                <permiso>retiro efectivo</permiso>
+                            </permisos>
+                        </titular>
+                        <titular NIF="87654321B">
+                            <permisos>
+                                <permiso>transferencias nacionales</permiso>
+                                <permiso>retiro efectivo</permiso>
+                            </permisos>
+                        </titular>
+                    </titulares>
+                    <recibos_domiciliados>
+                        <recibo>
+                            <concepto>Factura electricidad</concepto>
+                            <importe>85.50</importe>
+                        </recibo>
+                        <recibo>
+                            <concepto>Factura teléfono</concepto>
+                            <importe>45.20</importe>
+                        </recibo>
+                    </recibos_domiciliados>
+                </cuenta>
+            </cuentas>
+        </sucursal>
+    </sucursales>
+</banco>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE files [
+    <!ELEMENT files (file)>
+    <!ELEMENT file (name, town, province, country)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT town (#PCDATA)>
+    <!ELEMENT province (#PCDATA)>
+    <!ELEMENT country (#PCDATA)>
+    <!ENTITY townName "Valencia">
+    <!ENTITY provinceName SYSTEM "prov.txt">
+    <!ENTITY country SYSTEM "country.xml">
+    <!ENTITY insti "IES Serpis">
+]>
+<files>
+    <file>
+        <name>&insti;</name>
+        <town>&townName;</town>
+        <province>&provinceName;</province> 
+        &country; 
+    </file>
+</files>

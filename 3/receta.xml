@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE recetas [
+<!ELEMENT recetas (receta)+>
+<!ELEMENT receta (nombre , ingredientes , preparacion)>
+<!ELEMENT ingredientes (ingrediente)+>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT ingrediente (#PCDATA)>
+<!ELEMENT preparacion (#PCDATA)>
+<!ATTLIST receta numRaciones CDATA #REQUIRED>
+<!ATTLIST receta dificultad (baja | media | alta) "media">
+<!ATTLIST ingrediente cantidad CDATA #IMPLIED>
+<!ATTLIST ingrediente unidad CDATA #IMPLIED>
+]>
+<recetas>
+  <receta numRaciones="1">
+    <nombre>Pan con ajo y perejil</nombre>
+    <ingredientes>
+      <ingrediente>Pan</ingrediente>
+      <ingrediente>Ajo</ingrediente>
+      <ingrediente cantidad="1" unidad="puñao">Perejil</ingrediente>
+    </ingredientes>
+    <preparacion>Cortar el pan en rebanadas; tostarlo; pelar el ajo; fortarlo en el pan; trocear el perejil; espolvorear sobre el pan</preparacion>
+  </receta>
+</recetas>

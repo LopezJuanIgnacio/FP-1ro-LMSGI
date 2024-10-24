@@ -1,0 +1,16 @@
+<!-- En el esquema DTD no se le puede poner restricciones al (#PCDATA), eso se puede en el XSD
+Asique lo deje como un atributo ID -->
+<!ELEMENT canciones (cancion+) >
+<!ELEMENT cancion (titulo, compositores, disco, sello, artistas) >
+<!ATTLIST cancion 
+    duracion CDATA #IMPLIED
+    año CDATA #REQUIRED>
+<!ELEMENT titulo (#PCDATA) >
+<!ELEMENT compositores (compositor+) >
+<!ELEMENT compositor (nombre, apellidos?) >
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT disco (#PCDATA)>
+<!ELEMENT sello (#PCDATA)>
+<!ELEMENT artistas (artista+) >
+<!ELEMENT artista (#PCDATA)>
