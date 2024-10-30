@@ -1,0 +1,66 @@
+[
+  {
+    "titulo": "Video Killed the Radio Star",
+    "compositores": [
+      {
+        "nombre": "Geoff",
+        "apellido": "Downes"
+      },
+      {
+        "nombre": "Trevor",
+        "apellido": "Horn"
+      },
+      {
+        "nombre": "Bruce",
+        "apellido": "Woolley"
+      }
+    ],
+    "disco": "The Age of Plastic",
+    "sello": "Island",
+    "artistas": ["The Buggles"],
+    "año": 1979,
+    "duracion": 248
+  },
+  {
+    "titulo": "Bang my head",
+    "compositores": [
+      {
+        "nombre": "David",
+        "apellido": "Guetta"
+      },
+      {
+        "nombre": "Giorgio",
+        "apellido": "Tuinfort"
+      },
+      {
+        "nombre": "Sia",
+        "apellido": "Furler"
+      },
+      {
+        "nombre": "Marcus",
+        "apellido": "van Wattum"
+      },
+      {
+        "nombre": "Nick",
+        "apellido": "Rotteveel"
+      },
+      {
+        "nombre": "Kristian",
+        "apellido": "Karlsson"
+      },
+      {
+        "nombre": "Vincent",
+        "apellido": "Pontare"
+      },
+      {
+        "nombre": "Magnus",
+        "apellido": "Lidehall"
+      }
+    ],
+    "disco": "Listen",
+    "sello": "Warner",
+    "artistas": ["David Guetta", "Sia"],
+    "año": 2014,
+    "duracion": 233
+  }
+]

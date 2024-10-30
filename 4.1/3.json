@@ -1,0 +1,74 @@
+{
+  "Numero de factura": "2020-0049",
+  "Cliente": {
+    "Nombre": "Sociedad SL",
+    "NIF": "12345679P",
+    "Direccion": "Calle Gran Via, 1",
+    "Codigo Postal": "28013",
+    "Ciudad": "Sevilla",
+    "Provincia": "Sevilla",
+    "Pais": "España",
+    "Telefono": "955123456",
+    "Email": "company@sl.com"
+  },
+  "Fecha": "25/11/2020",
+  "Vencimiento": "25/12/2020",
+  "Conceptos": [
+    {
+      "Descripcion": "Estudios previos",
+      "Unidades": 1,
+      "Base Ud": 8750.0,
+      "Base Total": 8750.0,
+      "Porcentaje IVA": 21,
+      "IVA": 1837.5
+    },
+    {
+      "Descripcion": "Anteproyecto",
+      "Unidades": 1,
+      "Base Ud": 35000.0,
+      "Base Total": 35000.0,
+      "Porcentaje IVA": 21,
+      "IVA": 7350.0
+    },
+    {
+      "Descripcion": "Proyecto básico",
+      "Unidades": 1,
+      "Base Ud": 26250.0,
+      "Base Total": 26250.0,
+      "Porcentaje IVA": 21,
+      "IVA": 5512.5
+    },
+    {
+      "Descripcion": "Proyecto de ejecución",
+      "Unidades": 1,
+      "Base Ud": 52500.0,
+      "Base Total": 52500.0,
+      "Porcentaje IVA": 21,
+      "IVA": 11025.0
+    },
+    {
+      "Descripcion": "Dirección de obra",
+      "Unidades": 1,
+      "Base Ud": 43750.0,
+      "Base Total": 43750.0,
+      "Porcentaje IVA": 21,
+      "IVA": 9187.5
+    },
+    {
+      "Descripcion": "Liquidación y recepción del edificio",
+      "Unidades": 1,
+      "Base Ud": 8750.0,
+      "Base Total": 8750.0,
+      "Porcentaje IVA": 21,
+      "IVA": 1837.5
+    }
+  ],
+  "Base Imponible": 175000.0,
+  "Tipo de impuesto": "IVA 21%",
+  "Impuesto": 36750.0,
+  "Totales": {
+    "Total Base Imponible": 175000.0,
+    "Total IVA": 36750.0,
+    "Total": 211750.0
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "nombre": {
+        "type": "string"
+      },
+      "especie": {
+        "enum": ["terrestres", "pegasos", "unicornios", "alicornios"]
+      },
+      "sexo": {
+        "enum": ["macho", "hembra"]
+      },
+      "color_pelaje": {
+        "type": "string"
+      },
+      "color_crin": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "maximum": 3
+      },
+      "protagonismo": {
+        "enum": ["principal", "secundario"]
+      },
+      "aparicion": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 221
+      }
+    },
+    "required": ["nombre", "especie", "sexo", "color_pelaje", "color_crin", "protagonismo", "aparicion"]
+  }
+}

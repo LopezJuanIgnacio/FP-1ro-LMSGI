@@ -1,0 +1,10 @@
+{
+  "Direccion": "Mar Lorente",
+  "Vicedireccion": "Virgínia Pla",
+  "Jefatura de estudios": {
+    "Eso": "Remei Ibañez",
+    "Bachillerato": "Josep Martínez",
+    "Ciclos": "Eva Cutanda"
+  },
+  "Secretaria de dirección": ["Javier Rodríguez", "Ricardo Muñoz"]
+}

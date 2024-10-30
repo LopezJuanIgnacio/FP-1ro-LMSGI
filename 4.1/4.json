@@ -1,0 +1,47 @@
+[
+  {
+    "nombre": "DJ Pon-3",
+    "especie": "unicornio",
+    "sexo": "hembra",
+    "color_pelaje": "blanco",
+    "color_crin": ["azul cobalto", "cian"],
+    "protagonismo": "secundario",
+    "aparicion": 14
+  },
+  {
+    "nombre": "Princesa Cadance",
+    "especie": "alicornio",
+    "sexo": "hembra",
+    "color_pelaje": "cereza claro",
+    "color_crin": ["violeta", "rosa"],
+    "protagonismo": "secundario",
+    "aparicion": 51
+  },
+  {
+    "nombre": "Rainbow Dash",
+    "especie": "pegaso",
+    "sexo": "hembra",
+    "color_pelaje": "azul celeste",
+    "color_crin": ["multicolor"],
+    "protagonismo": "principal",
+    "aparicion": 1
+  },
+  {
+    "nombre": "Twilight Sparkle",
+    "especie": "unicornio",
+    "sexo": "hembra",
+    "color_pelaje": "lila",
+    "color_crin": ["azul oscuro", "rosa"],
+    "protagonismo": "principal",
+    "aparicion": 1
+  },
+  {
+    "nombre": "Big McIntosh",
+    "especie": "terrestre",
+    "sexo": "macho",
+    "color_pelaje": "carmesí",
+    "color_crin": ["naranja"],
+    "protagonismo": "secundario",
+    "aparicion": 1
+  }
+]
