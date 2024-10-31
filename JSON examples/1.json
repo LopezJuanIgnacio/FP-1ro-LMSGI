@@ -1,0 +1,11 @@
+{
+  "name": {
+    "scientific": "Olea europea",
+    "common": "Olive"
+  },
+  "max_height": 15,
+  "lit_color": "red",
+   "holders": ["12345678K", "88887946R"],
+   "amount": 365.99,
+    "extra": null
+}
