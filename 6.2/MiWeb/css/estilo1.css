@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* Esto es un comentario */
+/*:root {
+  --Dark-Slate-Gray: #335c67;
+  --Vanilla-Ice: #fff3b0;
+  --Hunyadi-Yellow: #e09f3e;
+  --Aubrun: #9e2a2b;
+  --Chocolate-Cosmos: #540b0e;
+}*/
+/*Elemento*/
+* {
+}
+/*Elemento*/
+body {
+  background-color: #335c67;
+  color: #fff3b0;
+}
+/*Elemento*/
+nav {
+  background-color: #e09f3e;
+  color: #335c67;
+}
+/*Elemento*/
+aside {
+  background-color: rgb(158, 42, 43);
+  color: rgb(255, 243, 176);
+}
+/*Elemento*/
+footer {
+  background-color: rgb(84, 11, 14);
+  color: rgb(255, 243, 176);
+}
+/*Elemento*/
+header {
+  background-color: hsl(358, 77%, 19%);
+  color: floralwhite;
+}
