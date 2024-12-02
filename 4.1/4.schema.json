@@ -7,7 +7,7 @@
         "type": "string"
       },
       "especie": {
-        "enum": ["terrestres", "pegasos", "unicornios", "alicornios"]
+        "enum": ["terrestre", "pegaso", "unicornio", "alicornio"]
       },
       "sexo": {
         "enum": ["macho", "hembra"]

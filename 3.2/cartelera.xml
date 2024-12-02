@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<cartelera xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XSD/cartelera.xsd">
+<cartelera xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="XSD/cartelera.xsd">
   <pelicula codigo="p1" duracion="130">
     <titulo>SONIC 3: La película</titulo>
     <titulo_original>Sonic the Hedgehog 3</titulo_original>
@@ -9,7 +10,7 @@
       <genero>Comedia</genero>
       <genero>Aventura</genero>
     </generos>
-    <clasificacion edad="tp"/>
+    <clasificacion edad="tp" />
     <sinopsis>Sonic, Tails y Knuckles se enfrentarán al Dr. Robotnik antes de que conquiste el mundo. Robotnik tendrá un nuevo aliado: Shadow.</sinopsis>
     <direccion>Jeff Fowler</direccion>
     <reparto>
@@ -29,7 +30,7 @@
     <generos>
       <genero>Suspense</genero>
     </generos>
-    <sin_clasificar/>
+    <sin_clasificar />
     <sinopsis>Con solo 20 años, Aránzazu logró unirse a la banda ETA, convirtiéndose en la única mujer en compartir un piso con los líderes de la banda. Gracias a dicha infiltración, la Policía Nacional pudo desmantelar el comando Donosti.</sinopsis>
     <direccion>Atrantxa Echevarría</direccion>
     <reparto>
