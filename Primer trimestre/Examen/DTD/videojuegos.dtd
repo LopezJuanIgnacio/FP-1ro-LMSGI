@@ -1,0 +1,44 @@
+<!ELEMENT coleccion (juego+)>
+<!ELEMENT juego (titulo, fecha,desarrolladores,editor?,idiomas,generos,motor,metacritic,plataformas,web)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT desarrolladores (desarrollador+)>
+<!ELEMENT desarrollador (#PCDATA)>
+<!ELEMENT editor (#PCDATA)>
+<!ELEMENT idiomas (español, ingles,frances?,aleman?,italiano?,chino?)>
+<!ELEMENT español EMPTY>
+<!ELEMENT frances EMPTY>
+<!ELEMENT aleman EMPTY>
+<!ELEMENT italiano EMPTY>
+<!ELEMENT ingles EMPTY>
+<!ELEMENT chino EMPTY>
+<!ELEMENT generos (genero, genero, genero)>
+<!ELEMENT genero EMPTY>
+<!ELEMENT motor (#PCDATA)>
+<!ELEMENT metacritic EMPTY>
+<!ELEMENT plataformas (plataforma+)>
+<!ELEMENT plataforma EMPTY>
+<!ELEMENT web (#PCDATA)>
+<!ATTLIST juego ident CDATA #REQUIRED>
+<!ATTLIST español interfaz (y|n) #REQUIRED
+voces (y|n) #REQUIRED
+subt (y|n) #REQUIRED>
+<!ATTLIST frances interfaz (y|n) #REQUIRED
+voces (y|n) #REQUIRED
+subt (y|n) #REQUIRED>
+<!ATTLIST aleman interfaz (y|n) #REQUIRED
+voces (y|n) #REQUIRED
+subt (y|n) #REQUIRED>
+<!ATTLIST italiano interfaz (y|n) #REQUIRED
+voces (y|n) #REQUIRED
+subt (y|n) #REQUIRED>
+<!ATTLIST ingles interfaz (y|n) #REQUIRED
+voces (y|n) #REQUIRED
+subt (y|n) #REQUIRED>
+<!ATTLIST chino interfaz (y|n) #REQUIRED
+voces (y|n) #REQUIRED
+subt (y|n) #REQUIRED>
+<!ATTLIST genero nombreG (accion|aventura|rol|simulador|plataformas|puzzle|lucha) #REQUIRED>
+<!ATTLIST metacritic nota CDATA #REQUIRED>
+<!ATTLIST plataforma nombreP (PC|PS3|PS4|PS5|Xbox360|XboxOne|XboxSeries|Switch|Android|iOS) #REQUIRED>
+<!ATTLIST fecha tipo CDATA #FIXED "lanzamiento">

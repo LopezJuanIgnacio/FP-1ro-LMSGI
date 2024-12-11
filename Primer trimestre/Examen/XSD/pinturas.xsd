@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="pinturas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="pintura" maxOccurs="unbounded" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                           <xs:element name="titulo"  maxOccurs="1" >
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="original" type="xs:string"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                           </xs:element>
+                           <xs:element name="alias" type="xs:string" minOccurs="0" maxOccurs="1" />
+                           <xs:element name="autor" type="xs:string"  maxOccurs="1" />
+                           <xs:element name="año" >
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:positiveInteger">
+                                        <xs:maxExclusive value="2100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                           </xs:element>
+                           <xs:element name="tecnicas">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="tecnica" type="xs:string"  minOccurs="1" maxOccurs="4"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                           </xs:element>
+                            <xs:element name="estilo" type="xs:string"  maxOccurs="1" />
+                            <xs:choice>
+                                <xs:element name="localizacion">
+                                <xs:complexType>
+                                    <xs:all>
+                                        <xs:element name="nombre" type="xs:string"  maxOccurs="1" />
+                                        <xs:element name="ciudad" type="xs:string"  maxOccurs="1" />
+                                    </xs:all>
+                                </xs:complexType>
+                                </xs:element>
+                                <xs:element name="paradero_desconocido" default="">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                            <xs:length value="0" />
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:element>
+                            </xs:choice>
+                           <xs:element name="precio"  maxOccurs="1" >
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:int">
+                                            <xs:attribute name="moneda" use="required">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:length value="3"></xs:length>
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                           </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

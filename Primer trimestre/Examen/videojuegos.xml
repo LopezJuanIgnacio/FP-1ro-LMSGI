@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE coleccion SYSTEM "DTD/videojuegos.dtd">
+<coleccion>
+    <juego ident="1">
+        <titulo>Dark souls</titulo>
+        <fecha>11/12/24</fecha>
+        <desarrolladores>
+            <desarrollador>
+                Hidetaka Miyazaki
+            </desarrollador>
+            <desarrollador>
+                Pablo Perez
+            </desarrollador>
+        </desarrolladores>
+        <editor>
+            Fromsoftware
+        </editor>
+        <idiomas>
+            <español interfaz="y" voces="y" subt="y" />
+            <ingles interfaz="y" voces="y" subt="y" />
+            <frances interfaz="y" voces="n" subt="y" />
+            <aleman interfaz="n" voces="n" subt="n" />
+        </idiomas>
+        <generos>
+            <genero nombreG="accion" />
+            <genero nombreG="aventura" />
+            <genero nombreG="lucha" />
+        </generos>
+        <motor>
+            Unreal engine 3
+        </motor>
+        <metacritic nota="10" />
+        <plataformas>
+            <plataforma nombreP="PC" />
+            <plataforma nombreP="PS3" />
+            <plataforma nombreP="Xbox360" />
+        </plataformas>
+        <web>
+            darksouls.com
+        </web>
+    </juego>
+    <juego ident="2">
+        <titulo>League of legends</titulo>
+        <fecha>14/06/10</fecha>
+        <desarrolladores>
+            <desarrollador>
+                Juan Rodriguez
+            </desarrollador>
+        </desarrolladores>
+        <idiomas>
+            <español interfaz="y" voces="y" subt="y" />
+            <ingles interfaz="y" voces="y" subt="y" />
+            <aleman interfaz="y" voces="y" subt="y" />
+            <italiano interfaz="n" voces="n" subt="n" />
+            <chino interfaz="y" voces="n" subt="y" />
+        </idiomas>
+        <generos>
+            <genero nombreG="rol" />
+            <genero nombreG="puzzle" />
+            <genero nombreG="lucha" />
+        </generos>
+        <motor>
+            Unreal engine 3
+        </motor>
+        <metacritic nota="10" />
+        <plataformas>
+            <plataforma nombreP="PC" />
+            <plataforma nombreP="Android" />
+        </plataformas>
+        <web>
+            lol.com
+        </web>
+    </juego>
+</coleccion>

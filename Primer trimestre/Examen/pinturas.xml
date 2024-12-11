@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pinturas xsi:noNamespaceSchemaLocation="XSD/pinturas.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <pintura>
+    <titulo original="Marilyn Diptych">Díptico de Marilyn</titulo>
+    <autor>Andy Warhol</autor>
+    <año>1962</año>
+    <tecnicas>
+      <tecnica>Serigrafía</tecnica>
+      <tecnica>Pintura acrílica sobre lienzo</tecnica>
+    </tecnicas>
+    <estilo>Arte pop</estilo>
+    <localizacion>
+      <nombre>Tate</nombre>
+      <ciudad>Londres</ciudad>
+    </localizacion>
+    <precio moneda="USD">860000</precio>
+  </pintura>
+  <pintura>
+    <titulo original="Le pigeon aux petits pois">La paloma con guisantes</titulo>
+    <alias>La paloma con guisantes verdes</alias>
+    <autor>Pablo Picasso</autor>
+    <año>1912</año>
+    <tecnicas>
+      <tecnica>Óleo sobre lienzo</tecnica>
+    </tecnicas>
+    <estilo>Cubismo</estilo>
+    <paradero_desconocido/>
+    <precio moneda="EUR">27000000</precio>
+  </pintura>
+  <pintura>
+    <titulo original="Stjernenatten">La noche estrellada</titulo>
+    <autor>Vincent van Gogh</autor>
+    <año>1889</año>
+    <tecnicas>
+      <tecnica>Óleo sobre lienzo</tecnica>
+    </tecnicas>
+    <estilo>Posimpresionismo</estilo>
+    <localizacion>
+      <nombre>MoMA</nombre>
+      <ciudad>Nueva York</ciudad>
+    </localizacion>
+    <precio moneda="USD">100000000</precio>
+  </pintura>
+</pinturas>

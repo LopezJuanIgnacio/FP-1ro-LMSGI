@@ -1,0 +1,83 @@
+{
+  "type": "object",
+  "required": ["personajes"],
+  "properties": {
+    "personajes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "clase": {
+            "type": "string",
+            "enum": [
+              "Caballero",
+              "Guerrero",
+              "Bandido",
+              "Ladrón",
+              "Hechicero",
+              "Marginado",
+              "Piromántico",
+              "Vagabundo",
+              "Cazador",
+              "Clérigo"
+            ]
+          },
+          "descripcion": {
+            "type": "string",
+            "maxLength": 80
+          },
+          
+          "stats_iniciales": {
+            "type": "object",
+            "properties": {
+              "nivel": {
+                "type": "integer",
+              },
+              "vitalidad": {
+                "type": "integer"
+              },
+              "aprendizaje": {
+                "type": "integer"
+              },
+              "aguante": {
+                "type": "integer"
+              },
+              "fuerza": {
+                "type": "integer"
+              },
+              "destreza": {
+                "type": "integer"
+              },
+              "resistencia": {
+                "type": "integer"
+              },
+              "inteligencia": {
+                "type": "integer"
+              },
+              "fe": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "nivel",
+              "vitalidad",
+              "aprendizaje",
+              "aguante",
+              "fuerza",
+              "destreza",
+              "resistencia",
+              "inteligencia",
+              "fe"
+            ]
+          }
+        },
+        "required": [
+          "clase",
+          "descripcion",
+          "equipo_inicial",
+          "stats_iniciales"
+        ]
+      }
+    }
+  }
+}

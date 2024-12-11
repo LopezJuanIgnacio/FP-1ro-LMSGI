@@ -1,0 +1,141 @@
+{
+  "type": "object",
+  "required": [
+    "personajes"
+  ],
+  "properties": {
+    "personajes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "clase": {
+            "type": "string",
+            "enum": [
+              "Caballero",
+              "Guerrero",
+              "Bandido",
+              "Ladrón",
+              "Hechicero",
+              "Marginado",
+              "Piromántico",
+              "Vagabundo",
+              "Cazador",
+              "Clérigo"
+            ]
+          },
+          "descripcion": {
+            "type": "string",
+            "maxLength": 80
+          },
+          "equipo_inicial": {
+            "type": "object",
+            "properties": {
+              "armamento": {
+                "type": "object",
+                "properties": {
+                  "ofensivo": {
+                    "type": "string"
+                  },
+                  "defensivo": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "ofensivo",
+                  "defensivo"
+                ]
+              },
+              "armadura": {
+                "type": "object",
+                "properties": {
+                  "cabeza": {
+                    "type": "string"
+                  },
+                  "torso": {
+                    "type": "string"
+                  },
+                  "manos": {
+                    "type": "string"
+                  },
+                  "piernas": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "cabeza",
+                  "torso",
+                  "manos",
+                  "piernas"
+                ]
+              },
+              "objetos": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "armamento",
+              "armadura",
+              "objetos"
+            ]
+          },
+          "stats_iniciales": {
+            "type": "object",
+            "properties": {
+              "nivel": {
+                "type": "integer"
+              },
+              "vitalidad": {
+                "type": "integer"
+              },
+              "aprendizaje": {
+                "type": "integer"
+              },
+              "aguante": {
+                "type": "integer"
+              },
+              "fuerza": {
+                "type": "integer"
+              },
+              "destreza": {
+                "type": "integer"
+              },
+              "resistencia": {
+                "type": "integer"
+              },
+              "inteligencia": {
+                "type": "integer"
+              },
+              "fe": {
+                "type": "integer",
+                "multipleOf": 0.5,
+                "maximum": 15,
+                "minimum": 8
+              }
+            },
+            "required": [
+              "nivel",
+              "vitalidad",
+              "aprendizaje",
+              "aguante",
+              "fuerza",
+              "destreza",
+              "resistencia",
+              "inteligencia",
+              "fe"
+            ]
+          }
+        },
+        "required": [
+          "clase",
+          "descripcion",
+          "equipo_inicial",
+          "stats_iniciales"
+        ]
+      }
+    }
+  }
+}
