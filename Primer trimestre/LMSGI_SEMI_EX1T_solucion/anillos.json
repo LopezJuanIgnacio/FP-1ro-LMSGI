@@ -1,0 +1,94 @@
+{
+  "anillos": [
+    {
+      "nombre": "Narya",
+      "alias": [
+        "Anillo de fuego",
+        "Anillo rojo"
+      ],
+      "lote": {
+        "nombre_lote": "Los Tres",
+        "numserie": "3-2",
+        "cita": "Tres anillos para los Reyes Elfos bajo el cielo"
+      },
+      "portadores": [
+        "Gil-galad",
+        "Cirdan",
+        "Gandalf"
+      ],
+      "poderes": [
+        "Infusión de esperanza"
+      ],
+      "destino_final": "Aman"
+    },
+    {
+      "nombre": "Nenya",
+      "alias": [
+        "Anillo de agua",
+        "Anillo de diamante",
+        "Anillo blanco"
+      ],
+      "lote": {
+        "nombre_lote": "Los Tres",
+        "numserie": "3-1",
+        "cita": "Tres anillos para los Reyes Elfos bajo el cielo"
+      },
+      "portadores": [
+        "Galadriel"
+      ],
+      "poderes": [
+        "preservación frente al paso del tiempo"
+      ],
+      "destino_final": "Aman"
+    },
+    {
+      "nombre": "Vilya",
+      "alias": [
+        "Anillo de aire",
+        "Anillo de zafiro",
+        "Anillo azul"
+      ],
+      "lote": {
+        "nombre_lote": "Los Tres",
+        "numserie": "3-3",
+        "cita": "Tres anillos para los Reyes Elfos bajo el cielo"
+      },
+      "portadores": [
+        "Gil-galad",
+        "Elrond"
+      ],
+      "poderes": [
+        "sanación física, mental y espiritual"
+      ],
+      "destino_final": "Aman"
+    },
+    {
+      "nombre": "Anillo Único",
+      "alias": [
+        "Anillo Soberano",
+        "Anillo de poder",
+        "Daño de Isildur"
+      ],
+      "lote": {
+        "nombre_lote": "El Único",
+        "numserie": "1-1",
+        "cita": "Un anillo para gobernarlos a todos"
+      },
+      "portadores": [
+        "Sauron",
+        "Isildur",
+        "Gollum",
+        "Bilbo",
+        "Frodo",
+        "Sam"
+      ],
+      "poderes": [
+        "invisibilidad",
+        "longevidad",
+        "control mental",
+        "don de lenguas"
+      ],
+      "destino_final": "Monte del Destino"
+    }
+  ]
+}

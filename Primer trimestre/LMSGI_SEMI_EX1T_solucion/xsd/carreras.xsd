@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="carreras">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="caballo" minOccurs="1" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element ref="actuaciones"/>
+            </xs:sequence>
+            <xs:attribute name="porcentaje_victorias" use="required">
+              <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                  <xs:maxInclusive value="100"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!--SEPARADOR-->
+  <xs:element name="actuaciones">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="actuacion" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!--SEPARADOR-->
+  <xs:element name="actuacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="fecha" type="xs:date"/>
+        <xs:element name="num" type="xs:positiveInteger"/>
+        <xs:element name="hipodromo" type="xs:string"/>
+        <xs:element name="distancia">
+          <xs:complexType>
+            <xs:attribute name="km" type="tipoKm" use="required"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dotacion" type="xs:positiveInteger"/>
+        <xs:element ref="pista"/>
+        <xs:element ref="jinete"/>
+        <xs:element name="preparador" type="xs:string"/>
+        <xs:choice>
+          <xs:element name="div" type="xs:decimal"/>
+          <xs:element name="ganancia" type="xs:positiveInteger"/>
+        </xs:choice>
+        <xs:element name="puesto">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:positiveInteger">
+                <xs:attribute name="participantes" type="xs:positiveInteger" use="required"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!--SEPARADOR-->
+  <xs:simpleType name="tipoKm">
+    <xs:restriction base="xs:decimal">
+      <xs:fractionDigits value="1"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!--SEPARADOR-->
+  <xs:element name="pista">
+    <xs:complexType>
+      <xs:attribute name="tipo" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="arena"/>
+            <xs:enumeration value="hierba"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="caract">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="blando"/>
+            <xs:enumeration value="bueno"/>
+            <xs:enumeration value="duro"/>
+            <xs:enumeration value="pesado"/>
+            <xs:enumeration value="embarrado"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <!--SEPARADOR-->
+  <xs:element name="jinete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="peso" type="xs:decimal"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

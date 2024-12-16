@@ -1,0 +1,34 @@
+<!ELEMENT placasbase (placa+)>
+  <!ELEMENT placa (marca, modelo, socket, chipset, memoria, puertosGraficos, expansion, almacenamiento, USB)>
+  <!ELEMENT marca (#PCDATA)>
+  <!ELEMENT modelo (#PCDATA)>
+  <!ELEMENT socket (#PCDATA)>
+  <!ELEMENT chipset (#PCDATA)>
+  <!ELEMENT memoria (tipoMemoria, slots, maxMemoria)>
+    <!ELEMENT tipoMemoria (#PCDATA)>
+    <!ELEMENT slots (#PCDATA)>
+    <!ELEMENT maxMemoria (#PCDATA)>
+  <!ELEMENT puertosGraficos (puerto+)>
+    <!ELEMENT puerto (#PCDATA)>
+  <!ELEMENT expansion (ranura+)>
+    <!ELEMENT ranura (cantidad, longitud)>
+      <!ELEMENT cantidad (#PCDATA)>
+      <!ELEMENT longitud (#PCDATA)>
+  <!ELEMENT almacenamiento (SATA, M.2?)>
+  <!ELEMENT SATA (#PCDATA)>
+  <!ELEMENT M.2 (#PCDATA)>
+  <!ELEMENT USB (trasero, frontal)> 
+    <!ELEMENT trasero (v3.2+, v2.0+)>
+    <!ELEMENT frontal (v3.2+, v2.0+)>
+      <!ELEMENT v3.2 EMPTY>
+      <!ELEMENT v2.0 EMPTY>
+  <!ATTLIST socket fabricante (AMD|INTEL) #REQUIRED>
+  <!ATTLIST memoria tipoModulo CDATA #FIXED "DIMM">
+  <!ATTLIST maxMemoria unidad CDATA "GB">
+  <!ATTLIST puerto tipo CDATA #REQUIRED>
+  <!ATTLIST ranura bus CDATA #REQUIRED>
+  <!ATTLIST v3.2 gen CDATA #REQUIRED
+  tipo (A|B|C) #IMPLIED
+  cantidad CDATA #REQUIRED>
+  <!ATTLIST v2.0 tipo (A|B) #IMPLIED
+  cantidad CDATA #REQUIRED>

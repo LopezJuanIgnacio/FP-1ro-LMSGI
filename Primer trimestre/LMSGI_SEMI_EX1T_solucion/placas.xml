@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE placasbase SYSTEM "dtd/placas.dtd">
+<placasbase>
+  <placa>
+    <marca>ASUS</marca>
+    <modelo>TUF GAMING B650-PLUS WIFI</modelo>
+    <socket fabricante="AMD">AM5</socket>
+    <chipset>AMD B650</chipset>
+    <memoria tipoModulo="DIMM">
+      <tipoMemoria>DDR5</tipoMemoria>
+      <slots>4</slots>
+      <maxMemoria>128</maxMemoria>
+    </memoria>
+    <puertosGraficos>
+      <puerto tipo="DisplayPort">1</puerto>
+      <puerto tipo="HDMI">1</puerto>
+    </puertosGraficos>
+    <expansion>
+      <ranura bus="PCIe 4.0/3.0">
+        <cantidad>1</cantidad>
+        <longitud>x16</longitud>
+      </ranura>
+      <ranura bus="PCIe 4.0/3.0">
+        <cantidad>1</cantidad>
+        <longitud>x4</longitud>
+      </ranura>
+      <ranura bus="PCIe 4.0/3.0">
+        <cantidad>2</cantidad>
+        <longitud>x1</longitud>
+      </ranura>
+    </expansion>
+    <almacenamiento>
+      <SATA>4</SATA>
+      <M.2>3</M.2>
+    </almacenamiento>
+    <USB>
+      <trasero>
+        <v3.2 gen="2" tipo="A" cantidad="1"/>
+        <v3.2 gen="1" tipo="A" cantidad="4"/>
+        <v3.2 gen="2" tipo="C" cantidad="1"/>
+        <v2.0 tipo="A" cantidad="2"/>
+      </trasero>
+      <frontal>
+        <v3.2 gen="1" cantidad="1"/>
+        <v3.2 gen="2" cantidad="1"/>
+        <v2.0 cantidad="2"/>
+      </frontal>
+    </USB>
+  </placa>
+  <placa>
+    <marca>ASUS</marca>
+    <modelo>ROG STRIX B550-F GAMING WIFI II</modelo>
+    <socket fabricante="AMD">AM4</socket>
+    <chipset>AMD B550</chipset>
+    <memoria tipoModulo="DIMM">
+      <tipoMemoria>DDR4</tipoMemoria>
+      <slots>4</slots>
+      <maxMemoria unidad="GB">128</maxMemoria>
+    </memoria>
+    <puertosGraficos>
+      <puerto tipo="DisplayPort">1</puerto>
+      <puerto tipo="HDMI">1</puerto>
+    </puertosGraficos>
+    <expansion>
+      <ranura bus="PCIe 4.0/3.0">
+        <cantidad>1</cantidad>
+        <longitud>x16</longitud>
+      </ranura>
+      <ranura bus="PCIe 4.0/3.0">
+        <cantidad>1</cantidad>
+        <longitud>x4</longitud>
+      </ranura>
+      <ranura bus="PCIe 4.0/3.0">
+        <cantidad>3</cantidad>
+        <longitud>x1</longitud>
+      </ranura>
+    </expansion>
+    <almacenamiento>
+      <SATA>6</SATA>
+      <M.2>2</M.2>
+    </almacenamiento>
+    <USB>
+      <trasero>
+        <v3.2 gen="2x2" tipo="C" cantidad="1"/>
+        <v3.2 gen="2" tipo="A" cantidad="2"/>
+        <v3.2 gen="2" tipo="C" cantidad="1"/>
+        <v2.0 tipo="A" cantidad="4"/>
+      </trasero>
+      <frontal>
+        <v3.2 gen="1" cantidad="3"/>
+        <v2.0 cantidad="4"/>
+      </frontal>
+    </USB>
+  </placa>
+</placasbase>

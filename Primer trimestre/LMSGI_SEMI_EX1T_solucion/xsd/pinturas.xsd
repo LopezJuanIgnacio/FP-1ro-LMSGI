@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="pinturas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="pintura" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="titulo" type="tipoTitulo"/>
+              <xs:element name="alias" type="xs:string" minOccurs="0"/>
+              <xs:element name="autor" type="xs:string"/>
+              <xs:element name="año" type="tipoAño"/>
+              <xs:element name="tecnicas">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="tecnica" maxOccurs="4" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="estilo" type="xs:string"/>
+              <xs:choice>
+                <xs:element name="localizacion" type="tipoLocalizacion"/>
+                <xs:element name="paradero_desconocido" fixed="" type="xs:string"/>
+              </xs:choice>
+              <xs:element name="precio" type="tipoPrecio"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:complexType name="tipoTitulo">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="original" type="xs:string"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  
+  <xs:simpleType name="tipoAño">
+    <xs:restriction base="xs:positiveInteger">
+      <xs:maxExclusive value="2100"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:complexType name="tipoLocalizacion">
+    <xs:all>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="ciudad" type ="xs:string"/>
+    </xs:all>
+  </xs:complexType>
+  
+  <xs:complexType name="tipoPrecio">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal">
+        <xs:attribute name="moneda" use="required">
+    <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:length value="3"/>
+    </xs:restriction>
+  
+  </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  
+
+  
+  
+</xs:schema>

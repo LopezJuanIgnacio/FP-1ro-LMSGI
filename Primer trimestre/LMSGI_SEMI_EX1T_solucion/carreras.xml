@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<carreras xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd/carreras.xsd">
+  <caballo porcentaje_victorias="20">
+    <nombre>Bailarina</nombre>
+    <actuaciones>
+      <actuacion>
+        <fecha>2011-11-13</fecha>
+        <num>517</num>
+        <hipodromo>La Zarzuela</hipodromo>
+        <distancia km="2.2"/>
+        <dotacion>4000</dotacion>
+        <pista tipo="hierba" caract="blando"/>
+        <jinete>
+          <nombre>E. Melian</nombre>
+          <peso>59</peso>
+        </jinete>
+        <preparador>G. Arizcorreta</preparador>
+        <div>9.0</div>
+        <puesto participantes="15">10</puesto>
+      </actuacion>
+      <actuacion>
+        <fecha>2011-11-01</fecha>
+        <num>496</num>
+        <hipodromo>Pineda</hipodromo>
+        <distancia km="1.6"/>
+        <dotacion>4000</dotacion>
+        <pista tipo="arena"/>
+        <jinete>
+          <nombre>E. Melian</nombre>
+          <peso>53.5</peso>
+        </jinete>
+        <preparador>G. Arizcorreta</preparador>
+        <ganancia>4000</ganancia>
+        <puesto participantes="6">1</puesto>
+      </actuacion>
+      <actuacion>
+        <fecha>2011-10-02</fecha>
+        <num>450</num>
+        <hipodromo>La Zarzuela</hipodromo>
+        <distancia km="2.1"/>
+        <dotacion>4500</dotacion>
+        <pista tipo="hierba" caract="bueno"/>
+        <jinete>
+          <nombre>E. Melian</nombre>
+          <peso>53.5</peso>
+        </jinete>
+        <preparador>G. Arizcorreta</preparador>
+        <div>12.6</div>
+        <puesto participantes="9">6</puesto>
+      </actuacion>
+      <actuacion>
+        <fecha>2011-09-01</fecha>
+        <num>405</num>
+        <hipodromo>Lasarte</hipodromo>
+        <distancia km="1.6"/>
+        <dotacion>4500</dotacion>
+        <pista tipo="hierba" caract="bueno"/>
+        <jinete>
+          <nombre>E. Melian</nombre>
+          <peso>54.5</peso>
+        </jinete>
+        <preparador>G. Arizcorreta</preparador>
+        <div>21.0</div>
+        <puesto participantes="7">6</puesto>
+      </actuacion>
+      <actuacion>
+        <fecha>2011-04-11</fecha>
+        <num>138</num>
+        <hipodromo>La Zarzuela</hipodromo>
+        <distancia km="1.8"/>
+        <dotacion>5000</dotacion>
+        <pista tipo="hierba" caract="pesado"/>
+        <jinete>
+          <nombre>J.L. Borrego</nombre>
+          <peso>57.5</peso>
+        </jinete>
+        <preparador>G. Arizcorreta</preparador>
+        <div>25.6</div>
+        <puesto participantes="12">11</puesto>
+      </actuacion>
+    </actuaciones>
+  </caballo>
+</carreras>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE coleccion SYSTEM "dtd/videojuegos.dtd">
+<coleccion>
+	<juego ident="VJ007">
+		<titulo>Bioshock</titulo>
+		<fecha tipo="lanzamiento">2007-08-21</fecha>
+		<desarrolladores>
+			<desarrollador>2K Boston</desarrollador>
+			<desarrollador>2K Australia</desarrollador>
+		</desarrolladores>
+		<editor>2K</editor>
+		<idiomas>
+			<español interfaz="y" voces="y" subt="y"/>
+			<ingles interfaz="y" voces="y" subt="y"/>
+			<frances interfaz="y" voces="n" subt="y"/>
+			<aleman interfaz="y" voces="y" subt="y"/>
+			<italiano interfaz="y" voces="y" subt="y"/>
+		</idiomas>
+		<generos>
+			<genero nombreG="accion"/>
+			<genero nombreG="rol"/>
+			<genero nombreG="aventura"/>
+		</generos>
+		<motor>Unreal Engine</motor>
+		<metacritic nota="96"/>
+		<plataformas>
+			<plataforma nombreP="PC"/>
+			<plataforma nombreP="PS3"/>
+			<plataforma nombreP="PS4"/>
+			<plataforma nombreP="Xbox360"/>
+			<plataforma nombreP="XboxOne"/>
+			<plataforma nombreP="Switch"/>
+		</plataformas>
+		<web>2k.com/en-US/game/bioshock-the-collection/</web>	
+	</juego>
+	
+	<juego ident="VJ008">
+		<titulo>Death Stranding</titulo>
+		<fecha tipo="lanzamiento">2019-11-08</fecha>
+		<desarrolladores>
+			<desarrollador>Kojima Productions</desarrollador>
+		</desarrolladores>
+		<editor>Sony Interactive Entertainment</editor>
+		<idiomas>
+			<español interfaz="y" voces="y" subt="y"/>
+			<ingles interfaz="y" voces="y" subt="y"/>
+			<frances interfaz="y" voces="y" subt="y"/>
+			<aleman interfaz="y" voces="y" subt="y"/>
+			<italiano interfaz="y" voces="y" subt="y"/>
+		</idiomas>
+		<generos>
+			<genero nombreG="accion"/>
+			<genero nombreG="rol"/>
+			<genero nombreG="aventura"/>
+		</generos>
+		<motor>Decima</motor>
+		<metacritic nota="85"/>
+		<plataformas>
+			<plataforma nombreP="PC"/>
+			<plataforma nombreP="PS4"/>
+		</plataformas>
+		<web>https://www.kojimaproductions.jp/en/death-stranding-pc</web>
+	</juego>
+
+
+</coleccion>

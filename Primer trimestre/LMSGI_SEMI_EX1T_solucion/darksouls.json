@@ -1,0 +1,93 @@
+{
+  "personajes": [
+    {
+      "clase": "Ladrón",
+      "descripcion": "Con remordimientos.\nImpactos críticos altos.\nTiene llave maestra.",
+      "equipo_inicial": {
+        "armamento": {
+          "ofensivo": "Cuchillo de bandido",
+          "defensivo": "Escudo objetivo"
+        },
+        "armadura": {
+          "cabeza": "Máscara de ladrón",
+          "torso": "Armadura de cuero negro",
+          "manos": "Guantes de cuero negro",
+          "piernas": "Botas de cuero negro"
+        },
+        "objetos": [
+          "Llave maestra",
+          "Frasco de estus"
+        ]
+      },
+      "stats_iniciales": {
+        "nivel": 5,
+        "vitalidad": 9,
+        "aprendizaje": 11,
+        "aguante": 9,
+        "fuerza": 9,
+        "destreza": 15,
+        "resistencia": 10,
+        "inteligencia": 12,
+        "fe": 11.5
+      }
+    },
+    {
+      "clase": "Guerrero",
+      "descripcion": "Intrépido guerrero.\nExperto en las armas.\nGran fuerza y destreza.",
+      "equipo_inicial": {
+        "armamento": {
+          "ofensivo": "Espada larga",
+          "defensivo": "Escudo heraldo"
+        },
+        "armadura": {
+          "cabeza": "Yelmo normal",
+          "torso": "Armadura de cuero duro",
+          "manos": "Guantes de cuero duro",
+          "piernas": "Botas de cuero duro"
+        },
+        "objetos": []
+      },
+      "stats_iniciales": {
+        "nivel": 4,
+        "vitalidad": 11,
+        "aprendizaje": 8,
+        "aguante": 12,
+        "fuerza": 13,
+        "destreza": 13,
+        "resistencia": 11,
+        "inteligencia": 9,
+        "fe": 9
+      }
+    },
+    {
+      "clase": "Marginado",
+      "descripcion": "Enigma sin ropa.\nArmado solo con un garrote y un viejo escudo de tablas.",
+      "equipo_inicial": {
+        "armamento": {
+          "ofensivo": "Garrote",
+          "defensivo": "Escudo de tablas"
+        },
+        "armadura": {
+          "cabeza": null,
+          "torso": null,
+          "manos": null,
+          "piernas": null
+        },
+        "objetos": [
+          "Frasco de estus"
+        ]
+      },
+      "stats_iniciales": {
+        "nivel": 6,
+        "vitalidad": 11,
+        "aprendizaje": 11,
+        "aguante": 11,
+        "fuerza": 11,
+        "destreza": 11,
+        "resistencia": 11,
+        "inteligencia": 11,
+        "fe": 11
+      }
+    }
+  ]
+}

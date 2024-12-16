@@ -1,0 +1,72 @@
+{
+  "type": "object",
+  "required": ["anillos"],
+  "properties": {
+    "anillos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string"
+          },
+          "alias": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "lote": {
+            "type": "object",
+            "properties": {
+              "nombre_lote": {
+                "type": "string"
+              },
+              "numserie": {
+                "type": "string",
+                "pattern": "^[1379]-[1-9]$"
+              },
+              "cita": {
+                "type": "string",
+                "maxLength": 60
+              }
+            },
+            "required": [
+              "nombre_lote",
+              "numserie",
+              "cita"
+            ]
+          },
+          "portadores": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "poderes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "destino_final": {
+            "enum": [
+              "Aman",
+              "Monte del Destino",
+              "Barad-dur",
+              "Destruido por dragón"
+            ]
+          }
+        },
+        "required": [
+          "nombre",
+          "alias",
+          "lote",
+          "portadores",
+          "poderes",
+          "destino_final"
+        ]
+      }
+    }
+  }
+}
