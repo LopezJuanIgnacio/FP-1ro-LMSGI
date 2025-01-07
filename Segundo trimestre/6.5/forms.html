@@ -53,7 +53,7 @@
         <textarea id="comentarios" name="comentarios" maxlength="150" cols="50" rows="4" placeholder="Máx. 150 caracteres"></textarea><br><br>
 
 
-        <p>(*) Campos requeridos</p><br><br>
+        <p>(*) Campos requeridos</p><br>
 
         <button type="submit">Enviar datos</button>
         <button type="reset">Limpiar formulario</button>
@@ -65,8 +65,8 @@
       action="./php/procesar.php">
         <b>usuario</b> <br> <br>
 
-        <label for="correo"><b>login:</b></label>
-        <input type="text" id="correo" name="correo" >
+        <label for="correo2"><b>login:</b></label>
+        <input type="text" id="correo2" name="correo2" placeholder="dir. correo">
         <label for="password"><b>password:</b></label>
         <input type="password" id="password" name="password" > <br> <br>
 
@@ -74,32 +74,33 @@
           <legend>DATOS PERSONALES</legend>
             <table>
             <tr>
-              <td><label for="nombre">Nombre:</label></td>
-              <td><input type="text" id="nombre" name="nombre"></td>
+              <td><label for="nombre2">Nombre:</label></td>
+              <td><input type="text" id="nombre2" name="nombre2"></td>
             </tr>
             <tr>
               <td><label for="apellidos">Apellidos:</label></td>
               <td><input type="text" id="apellidos" name="apellidos" size="50"></td>
             </tr>
             </table>
+            <br>
           <label for="estatura">Estatura:</label>
-          <input type="number" id="estatura" name="estatura" min="1.2" max="2.5" step="0.1" value="1.6" ><br>
+          <input type="number" id="estatura" name="estatura" min="1.2" max="2.5" step="0.1" value="1.6" ><br> <br>
           <label for="fotografia">Fotografia:</label>
           <input type="file" id="fotografia" name="fotografia" accept="image/*" ><br>
         </fieldset>
         <fieldset>
           <legend>DATOS ESTUDIANTES</legend>
           <label for="ciclo">Ciclo:</label>
-          <select type="text" id="ciclo" name="ciclo" >
+          <select id="ciclo" name="ciclo" >
             <option value="DAW">DAW</option>
             <option value="DAM" selected>DAM</option>
             <option value="ASIR">ASIR</option>
             <option value="SMR">SMR</option>
           </select> <br>
           <label for="curso">Curso:</label>
-          1º <input type="range" id="curso" name="curso" value="1" step="1" min="1" max="2" width="50">2º
-          <br>
-          <label ><b>AFINIDAD:</b></label>
+          1º <input type="range" id="curso" name="curso" value="1" step="1" min="1" max="2">2º
+          <br> <br>
+          <label ><b>AFINIDAD:</b></label> <br> <br>
           <table>
             <tr>
               <td><input type="radio" id="Hardware" name="afinidad" value="Hardware"><label  for="Hardware">Hardware</label></td>
@@ -110,11 +111,11 @@
               <td><input type="radio" id="Seguridad" name="afinidad" value="Seguridad"><label  for="Seguridad">Seguridad</label></td>
             </tr>
             <tr>
-              <td><input type="radio" id="Prog. Front" name="afinidad" value="Prog. Front"><label  for="Prog. Front">Prog. Front</label></td>
-              <td><input type="radio" id="Prog. Back" name="afinidad" value="Prog. Back"><label  for="Prog. Back">Prog. Back</label></td>
+              <td><input type="radio" id="ProgFront" name="afinidad" value="ProgFront"><label  for="ProgFront">Prog. Front</label></td>
+              <td><input type="radio" id="ProgBack" name="afinidad" value="ProgBack"><label  for="ProgBack">Prog. Back</label></td>
             </tr>
             <tr>
-              <td><input type="radio" id="Bases de datos" name="afinidad" value="Bases de datos"><label  for="Bases de datos">Bases de datos</label></td>
+              <td><input type="radio" id="BasesDeDatos" name="afinidad" value="BasesDeDatos"><label  for="BasesDeDatos">Bases de datos</label></td>
             </tr>
           </table>
         </fieldset>
