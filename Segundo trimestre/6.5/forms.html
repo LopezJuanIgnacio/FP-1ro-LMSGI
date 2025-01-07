@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Formulario</title>
+    <meta charset="UTF-8" >
+    <meta name="description" content="Trabajo practico de formularios" >
+    <meta name="keywords" content="Formulario, Datos, Input " >
+    <meta name="author" content="Juan Ignacio Lopez" >
+    <link rel="stylesheet" href="./css/estilo1.css" >
+  </head>
+  <body>
+    <h2>Formulario 1</h2>
+    <form>
+        <!-- Nombre y Apellido -->
+        <label for="nombre">Nombre y apellido (*)</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <hr>
+
+        <!-- Correo Electrónico -->
+        <label for="correo">Correo electrónico (*)</label><br>
+        <input type="email" id="correo" name="correo" required><br><br>
+        <hr>
+
+        <!-- Teléfono -->
+        <label for="telefono">Teléfono</label><br>
+        <input type="tel" id="telefono" name="telefono" placeholder="Prefijar +34"><br><br>
+        <hr>
+
+        <!-- Sexo -->
+        <label>Sexo</label><br>
+        <input type="radio" id="hombre" name="sexo" value="hombre">
+        <label for="hombre">Hombre</label>
+        <input type="radio" id="mujer" name="sexo" value="mujer">
+        <label for="mujer">Mujer</label>
+        <input type="radio" id="otro" name="sexo" value="otro">
+        <label for="otro">Otro</label><br><br>
+        <hr>
+
+        <!-- Fecha de Nacimiento -->
+        <label for="fecha-nacimiento">Fecha de nacimiento:</label><br>
+        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" value="2007-01-01"><br><br>
+        <hr>
+
+        <!-- Intereses -->
+        <label>Intereses</label><br>
+        <input type="checkbox" id="deporte" name="intereses" value="deporte">
+        <label for="deporte">Deporte</label>
+        <input type="checkbox" id="politica" name="intereses" value="politica">
+        <label for="politica">Política</label>
+        <input type="checkbox" id="tecnologia" name="intereses" value="tecnologia">
+        <label for="tecnologia">Tecnología</label>
+        <input type="checkbox" id="filatelia" name="intereses" value="filatelia">
+        <label for="filatelia">Filatelia</label><br><br>
+        <hr>
+
+        <!-- Comentarios -->
+        <label for="comentarios">Comentarios</label><br>
+        <textarea id="comentarios" name="comentarios" maxlength="150" placeholder="Máx. 150 caracteres"></textarea><br><br>
+        <hr>
+
+        <!-- Botones -->
+        <button type="submit">Enviar datos</button>
+        <button type="reset">Limpiar formulario</button><br><br>
+        <hr>
+
+        <!-- Nota -->
+        <small>(*) Campos requeridos</small>
+    </form>
+  </body>
+</html>
+  
