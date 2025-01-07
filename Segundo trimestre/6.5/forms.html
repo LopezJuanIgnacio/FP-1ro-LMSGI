@@ -6,43 +6,39 @@
     <meta name="description" content="Trabajo practico de formularios" >
     <meta name="keywords" content="Formulario, Datos, Input " >
     <meta name="author" content="Juan Ignacio Lopez" >
-    <link rel="stylesheet" href="./css/estilo1.css" >
+    <link rel="stylesheet" href="./css/styles.css" >
   </head>
   <body>
-    <h2>Formulario 1</h2>
-    <form>
-        <!-- Nombre y Apellido -->
-        <label for="nombre">Nombre y apellido (*)</label><br>
-        <input type="text" id="nombre" name="nombre" required><br><br>
+    <div>
+      <h2>Formulario 1</h2>
+      <form method="post" enctype="text/plain"
+      action="mailto:lmsgi_u6p5@ejemplo.com?subject=Formulario%20de%20contacto">
+        <label for="nombre"><b>Nombre y apellido (*)</b></label><br>
+        <input type="text" id="nombre" name="nombre" required size="30"><br><br>
         <hr>
 
-        <!-- Correo Electrónico -->
-        <label for="correo">Correo electrónico (*)</label><br>
-        <input type="email" id="correo" name="correo" required><br><br>
+        <label for="correo"><b>Correo electrónico (*)</b></label><br>
+        <input type="email" id="correo" name="correo" required size="50"><br><br>
         <hr>
 
-        <!-- Teléfono -->
-        <label for="telefono">Teléfono</label><br>
-        <input type="tel" id="telefono" name="telefono" placeholder="Prefijar +34"><br><br>
+        <label for="telefono"><b>Teléfono</b></label><br>
+        <input type="tel" id="telefono" name="telefono" required pattern="\+34[6789][0-9]{8}" placeholder="+34XXXXXXXXX" title="El formato debe ser español"><br><br>
         <hr>
 
-        <!-- Sexo -->
-        <label>Sexo</label><br>
+        <label><b>Sexo</b></label><br>
         <input type="radio" id="hombre" name="sexo" value="hombre">
         <label for="hombre">Hombre</label>
-        <input type="radio" id="mujer" name="sexo" value="mujer">
+        <input type="radio" id="mujer" name="sexo" value="mujer" checked>
         <label for="mujer">Mujer</label>
         <input type="radio" id="otro" name="sexo" value="otro">
         <label for="otro">Otro</label><br><br>
         <hr>
 
-        <!-- Fecha de Nacimiento -->
-        <label for="fecha-nacimiento">Fecha de nacimiento:</label><br>
+        <label for="fecha-nacimiento"><b>Fecha de nacimiento:</b></label><br>
         <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" value="2007-01-01"><br><br>
         <hr>
 
-        <!-- Intereses -->
-        <label>Intereses</label><br>
+        <label><b>Intereses</b></label><br>
         <input type="checkbox" id="deporte" name="intereses" value="deporte">
         <label for="deporte">Deporte</label>
         <input type="checkbox" id="politica" name="intereses" value="politica">
@@ -53,19 +49,78 @@
         <label for="filatelia">Filatelia</label><br><br>
         <hr>
 
-        <!-- Comentarios -->
-        <label for="comentarios">Comentarios</label><br>
-        <textarea id="comentarios" name="comentarios" maxlength="150" placeholder="Máx. 150 caracteres"></textarea><br><br>
-        <hr>
+        <label for="comentarios"><b>Comentarios</b></label><br>
+        <textarea id="comentarios" name="comentarios" maxlength="150" cols="50" rows="4" placeholder="Máx. 150 caracteres"></textarea><br><br>
 
-        <!-- Botones -->
+
+        <p>(*) Campos requeridos</p><br><br>
+
         <button type="submit">Enviar datos</button>
-        <button type="reset">Limpiar formulario</button><br><br>
-        <hr>
+        <button type="reset">Limpiar formulario</button>
+      </form>
+    </div>
+    <div>
+      <h2>Formulario 2</h2>
+      <form method="post" enctype="text/plain"
+      action="./php/procesar.php">
+        <b>usuario</b> <br> <br>
 
-        <!-- Nota -->
-        <small>(*) Campos requeridos</small>
-    </form>
+        <label for="correo"><b>login:</b></label>
+        <input type="text" id="correo" name="correo" >
+        <label for="password"><b>password:</b></label>
+        <input type="password" id="password" name="password" > <br> <br>
+
+        <fieldset>
+          <legend>DATOS PERSONALES</legend>
+            <table>
+            <tr>
+              <td><label for="nombre">Nombre:</label></td>
+              <td><input type="text" id="nombre" name="nombre"></td>
+            </tr>
+            <tr>
+              <td><label for="apellidos">Apellidos:</label></td>
+              <td><input type="text" id="apellidos" name="apellidos" size="50"></td>
+            </tr>
+            </table>
+          <label for="estatura">Estatura:</label>
+          <input type="number" id="estatura" name="estatura" min="1.2" max="2.5" step="0.1" value="1.6" ><br>
+          <label for="fotografia">Fotografia:</label>
+          <input type="file" id="fotografia" name="fotografia" accept="image/*" ><br>
+        </fieldset>
+        <fieldset>
+          <legend>DATOS ESTUDIANTES</legend>
+          <label for="ciclo">Ciclo:</label>
+          <select type="text" id="ciclo" name="ciclo" >
+            <option value="DAW">DAW</option>
+            <option value="DAM" selected>DAM</option>
+            <option value="ASIR">ASIR</option>
+            <option value="SMR">SMR</option>
+          </select> <br>
+          <label for="curso">Curso:</label>
+          1º <input type="range" id="curso" name="curso" value="1" step="1" min="1" max="2" width="50">2º
+          <br>
+          <label ><b>AFINIDAD:</b></label>
+          <table>
+            <tr>
+              <td><input type="radio" id="Hardware" name="afinidad" value="Hardware"><label  for="Hardware">Hardware</label></td>
+              <td><input type="radio" id="Redes" name="afinidad" value="Redes"><label  for="Redes">Redes</label></td>
+            </tr>
+            <tr>
+              <td><input type="radio" id="Sistemas" name="afinidad" value="Sistemas"><label  for="Sistemas">Sistemas</label></td>
+              <td><input type="radio" id="Seguridad" name="afinidad" value="Seguridad"><label  for="Seguridad">Seguridad</label></td>
+            </tr>
+            <tr>
+              <td><input type="radio" id="Prog. Front" name="afinidad" value="Prog. Front"><label  for="Prog. Front">Prog. Front</label></td>
+              <td><input type="radio" id="Prog. Back" name="afinidad" value="Prog. Back"><label  for="Prog. Back">Prog. Back</label></td>
+            </tr>
+            <tr>
+              <td><input type="radio" id="Bases de datos" name="afinidad" value="Bases de datos"><label  for="Bases de datos">Bases de datos</label></td>
+            </tr>
+          </table>
+        </fieldset>
+        <input type="image" src="./images/submit.png" alt="Enviar datos" width="100" height="50">
+      </form>
+    </div>
   </body>
 </html>
   
