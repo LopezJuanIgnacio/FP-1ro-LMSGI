@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "Roboto Mono";
+  src: url(../fonts/RobotoMono-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Mako";
+  src: url(../fonts/Mako-Regular.ttf);
+}
+@font-face {
+  font-family: "Orbitron";
+  src: url(../fonts/Orbitron-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Modak";
+  src: url(../fonts/Modak-Regular.ttf);
+}
+
+:root {
+  --Dark-Slate-Gray: #335c67;
+  --Vanilla-Ice: #fff3b0;
+  --Hunyadi-Yellow: #e09f3e;
+  --Aubrun: #9e2a2b;
+  --Chocolate-Cosmos: #540b0e;
+}
+/*Elemento*/
+* {
+}
+/*Elemento*/
+body {
+  background-color: #335c67;
+  color: #fff3b0;
+}
+/*Elemento*/
+nav {
+  background-color: #e09f3e;
+  color: #335c67;
+}
+/*Elemento*/
+aside {
+  background-color: rgb(158, 42, 43);
+  color: rgb(255, 243, 176);
+}
+/*Elemento*/
+footer {
+  background-color: rgb(84, 11, 14);
+  color: rgb(255, 243, 176);
+}
+/*Elemento*/
+header {
+  display: flex;
+  gap: 10px;
+  background-color: hsl(358, 77%, 19%);
+  color: floralwhite;
+}
+/*Elemento*/
+nav,
+header {
+  font-family: "roboto mono", monospace;
+}
+/*Elemento*/
+h1 {
+  font-family: "Modak", sans-serif;
+}
+/*Elemento*/
+h2 {
+  font-family: "Orbitron", sans-serif;
+}
+/*Elemento*/
+p {
+  font-family: "Mako", cursive;
+}
+/*Elemento*/
+img {
+  width: 50px;
+  height: 50px;
+}
+/*Clase*/
+.logo {
+  width: 75px;
+  height: 75px;
+}
+/*Clase*/
+.nuevosTitulos {
+  opacity: 0.5;
+}
+
+/*Elemento*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  max-width: 30vw;
+}
+
+/*Elemento*/
+table caption {
+  font-size: 22px;
+  font-style: italic;
+}
+
+/*Elemento*/
+table thead {
+  background-color: var(--Hunyadi-Yellow);
+  color: var(--Aubrun);
+  font-size: 1.2em;
+}
+
+/*Elemento*/
+table tbody tr td img {
+  width: 150px;
+  height: 150px;
+}
+
+/*Elemento*/
+aside,
+nav,
+section {
+  margin: 50px;
+}
+
+/*Elemento*/
+section {
+  padding: 10px 15px;
+}
+
+/*Elemento*/
+nav {
+  padding: 10px 0;
+  /*NIA: 13447527*/
+  border: 5px ridge hsl(264, 75%, 73%);
+  border-right: 5px groove hsl(264, 75%, 27%);
+  border-bottom: 5px groove hsl(264, 75%, 27%);
+}
+
+/*Elemento*/
+section h2 {
+  text-shadow: 1px 1px 0 var(--Chocolate-Cosmos);
+}
+
+/*Elemento*/
+footer {
+  border-color:  var(--Vanilla-Ice);
+  border-width: 20px 10px;
+  border-top-style: hidden;
+  border-right-style: dotted;
+  border-bottom-style: dashed;
+  border-left-style: solid;
+}

@@ -1,0 +1,27 @@
+/*Clase*/
+.ipsum {
+  text-decoration: underline solid var(--Chocolate-Cosmos);
+}
+
+/*Elemento*/
+article p {
+  text-indent: 0.5in;
+}
+
+/*Elemento*/
+section{
+  background-image: url(../images/azulejos.png);
+  background-position:  20% 20%;
+  background-repeat: repeat;
+}
+
+/*Elemento*/
+article:nth-child(2) {
+  height: 30ex;
+  overflow-y: auto;
+  background-attachment: local;
+  /*background-image: url(../images/Facebook.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  el articulo no tiene fondo, por lo que no toma efecto*/
+}

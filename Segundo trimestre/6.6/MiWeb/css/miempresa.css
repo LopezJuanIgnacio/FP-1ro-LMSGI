@@ -1,0 +1,9 @@
+/*Clase*/
+.ipsum {
+  text-decoration: underline solid var(--Chocolate-Cosmos);
+}
+
+/*Elemento*/
+article p {
+  text-indent: 0.5in;
+}
