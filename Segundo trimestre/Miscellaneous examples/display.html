@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">	
+	<link rel="stylesheet" href="css/estilovisual.css">
+	<title>TESTEO de DISPLAY</title>
+	<style>
+	
+		.secc{
+			margin-bottom:100px;
+			background: black;
+			/*overflow: hidden;*/
+			/*position: relative;*/
+		}
+
+		/*COMPROBAR DIFERENCIAS ENTRE OCULTAR Y NO VISUALIZAR */
+		#artrel1{
+			background:red;
+		}
+		#artrel2 {
+			background:green;
+			/*visibility:hidden;*/
+			/*display:none;*/
+			
+		}
+		#artrel3{
+			background:blue;
+		}
+		
+		/* ************************* */
+
+		.beis {
+			background: beige;
+			margin: 30px 0;
+			height:100px;
+			padding:10px 0;
+			position: relative;
+			z-index: 100;
+		}
+		
+		.bordemorado{
+			border: 2px darkviolet solid;
+			padding:4px;
+		}
+
+		#disp_inline{
+			display: inline;
+			height: 30px;
+			width: 200px;
+		}
+		#disp_block{
+			display: block;
+		}
+		#disp_inlblock{
+			display: inline-block;
+			height: 40px;
+			width: 250px;
+		}
+		
+			/* ************************* */
+			
+
+		.capa {
+			position: absolute;
+			width: 300px;
+			height: 400px;
+			border: solid 5px black;
+
+		}		
+
+		/* probar diferentes valores de z-index*/
+		
+		#caja1 {
+			z-index: 5; 
+			top: 32em; 
+			right: 5em; 
+			background:red;
+		}
+		#caja2 {
+			z-index: 15; 
+			top: 35em; 
+			right: 3em; 
+			background:green;
+		}
+		#caja3 {
+			z-index: 25; 
+			top: 38em; 
+			right: 2em; 
+			background: blue;
+		}	
+	
+	
+	</style>
+</head>
+<body>	
+	
+	
+	<section class="secc">
+		<article class="relativo" id="artrel1">
+			<h1>Artículo 1</h1>
+		</article>
+		<article class="relativo" id="artrel2">
+			<h1>Artículo 2</h1>
+		</article>
+		<article class="relativo" id="artrel3">
+			<h1>Artículo 3</h1>
+		</article>
+	</section>
+	
+	<section class=beis>
+		text text text
+		<article class="bordemorado">
+			Regular &lt;article&gt; (block)
+		</article>
+		text text text
+		<br><br>
+		text text text
+		<article class="bordemorado" id="disp_inline">
+			&lt;article&gt; using display: inline 
+		</article>
+		text text text
+	</section>
+	<section class=beis>
+		<article>
+			text text text 
+			<a href=# class="bordemorado" >Regular &lt;a&gt;, inline</a>
+			text text text</article><br>
+		<article>
+			text text text 
+			<a href=#  class="bordemorado" id="disp_block">&lt;a&gt; using display: block</a>
+			text text text 
+		</article>
+	</section>
+		<section class=beis>
+		<article>
+			text text text 
+			<a href=# class="bordemorado" >Regular &lt;a&gt;, inline; cannot set height or width</a>
+			text text text</article><br>
+		<article>
+			text text text 
+			<a href=#  class="bordemorado" id="disp_inlblock">&lt;a&gt; using display: inline-block</a>
+			text text text 
+		</article>
+	</section>
+<br>
+	<section>
+		<article class="capa" id=caja1>Capa 1</article>
+		<article class="capa" id=caja2>Capa 2</article>
+		<article class="capa" id=caja3>Capa 3</article>
+	</section>
+</body>
+</html>

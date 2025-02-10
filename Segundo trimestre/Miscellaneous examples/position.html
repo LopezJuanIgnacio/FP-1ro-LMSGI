@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>TESTEO de POSITION</title>
+	<style>
+	.secc{
+		margin: 10px 10px 100px 10px;
+		padding: 2px;
+		border: dotted purple 2px;
+		background: lightgrey;
+		/*overflow: hidden;*/
+		/*position: relative;*/
+	}
+	#artflo1, #artrel1, #artabs1, #artsti1, #artsta1 {
+		background:red;
+	}
+	#artflo2, #artrel2, #artabs2, #artsti2, #artsta2 {
+		background:forestgreen;
+	}
+	#artflo3, #artrel3, #artabs3, #artsti3, #artsta3{
+		background:dodgerblue;
+	}
+	.relativo, .absoluto, .pegajoso, .estatico {
+		border: 1px solid;
+	}
+	.otra{
+		border: 1px solid;
+		margin-top: 30px;
+	}
+	#speech{
+		text-align: justify;
+	}
+	p {
+		margin-bottom: 200px;
+	}
+
+	/* **HASTA AQUÍ NADA INTERESANTE, EXCEPTO LAS PROPIEDADES position y overflow DE .secc** 
+	
+	
+	/*ESTO NO HACE FALTA, PUESTO QUE ES EL VALOR POR DEFECTO*/
+	#artsta2 {
+		position: static;
+	}
+
+	/*PARA PROBAR POSICIONAMIENTO RELATIVO*/
+	/*PROBAR A LA VEZ CON overflow: hidden DE .secc*/
+	#artrel2{
+		position: relative;
+		bottom: 50px;
+		left: 35px;
+	}
+
+	/*PARA PROBAR POSICIONAMIENTOS ABSOLUTO Y FIJO*/
+	/*CAMBIAR VALOR DE POSITION fixed/absolute*/
+	/*APLICAR EL 'position: relative' DE .secc PARA VER DIFERENCIAS (sólo absoluto)*/
+	#artabs2{
+		/*position: fixed;*/
+	    position: absolute;
+		bottom: 10px;
+		right: 10px;
+	}
+
+
+	/*PARA PROBAR POSICIONAMIENTO PEGAJOSO*/
+	#artsti2{
+		/*position: sticky;*/
+		top: 60px;
+	}
+	
+	/*PARA PROBAR POSICIONAMIENTO FLOTANTE 1*/
+	.flotante{
+		border: 1px solid;
+		/*margin: 5px 0px 30px 0px;*/
+		float: left;
+	}
+	.noflotante {
+		border: 1px solid;
+		/*clear: both;*/
+	}
+	
+	/*PARA PROBAR POSICIONAMIENTO FLOTANTE 2*/
+	/*APLICAR VALORES A clear DE #speech PARA COMPROBAR DIFERENCIAS*/
+	img{
+		float: right;
+		margin: 0px 15px;
+		width: 220px;
+		height: auto;
+	}
+	#speech {
+		margin-right: 10px;
+		clear: left;
+		font-size: 120%;
+	}
+
+	/*PARA PROBAR CONSECUENCIAS DEL POSICIONAMIENTO FLOTANTE*/
+	#navegacion {
+		margin-top: 20px;
+		margin-bottom: 100px;
+		border: 1px solid #CCCCCC;
+		background: gray;
+		padding: .5em;
+		/*overflow: hidden;*/
+	}
+	.der {
+		float: right;
+	}
+	.izq {
+		float: left;
+	}
+	</style>
+</head>
+<body>
+
+	<h2>Static / not positioned</h2>
+	<section class="secc">
+		<article class="estatico" id="artsta1">
+			<h1>Article 1</h1>
+		</article>
+		<article class="estatico" id="artsta2">
+			<h1>Article 2</h1>
+		</article>
+		<article class="estatico" id="artsta3">
+			<h1>Article 3</h1>
+		</article>
+	</section>
+	
+	<h2>Relative</h2>
+	<section class="secc">
+		<article class="relativo" id="artrel1">
+			<h1>Article 1</h1>
+		</article>
+		<article class="relativo" id="artrel2">
+			<h1>Article 2</h1>
+		</article>
+		<article class="relativo" id="artrel3">
+			<h1>Article 3</h1>
+		</article>
+	</section>
+
+	<h2>Absolute / Fixed</h2>
+	<section class="secc">
+		<article class="absoluto" id="artabs1">
+			<h1>Article 1</h1>
+		</article>
+		<article class="absoluto" id="artabs2">
+			<h1>Article 2</h1>
+		</article>
+		<article class="absoluto" id="artabs3">
+			<h1>Article 3</h1>
+		</article>
+	</section>
+
+	<h2>Sticky</h2>
+	<!-- PROBAR TAMBIÉN COLOCANDO LOS article EN UN section -->
+	<!-- <section class="secc"> -->
+		<article class="pegajoso" id="artsti1">
+			<h3>Article 1</h3>
+		</article>
+		<article class="pegajoso" id="artsti2">
+			<h3>Article 2</h3>
+		</article>
+		<article class="pegajoso" id="artsti3">
+			<h3>Article 3</h3>
+		</article>
+	<!-- </section> -->
+
+	
+	<p style="font-size: small;">“Ezekiel 25:17. "The path of the righteous man is beset on all sides by the inequities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of the darkness. For he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who attempt to poison and destroy my brothers. And you will know I am the Lord when I lay my vengeance upon you." I been sayin' that shit for years. And if you ever heard it, it meant your ass. I never really questioned what it meant. I thought it was just a cold-blooded thing to say to a motherfucker before you popped a cap in his ass. But I saw some shit this mornin' made me think twice. Now I'm thinkin': it could mean you're the evil man. And I'm the righteous man. And Mr. .45 here, he's the shepherd protecting my righteous ass in the valley of darkness. Or it could be you're the righteous man and I'm the shepherd and it's the world that's evil and selfish. I'd like that. But that shit ain't the truth. The truth is you're the weak. And I'm the tyranny of evil men. But I'm tryin, Ringo. I'm tryin' real hard to be the shepherd.<br><br>
+	Jules Winnfield- Samuel L. Jackson” </p>
+	
+	
+	<!-- En este bloque, jugar cambiando el valor de class flotante/noflotante-->
+	<h2>Floating</h2>			
+	<section class="secc">
+		<article class="noflotante" id="artflo1">
+		  <h1>Article 1</h1>		
+		</article>
+		<article class="flotante" id="artflo2">
+		  <h1>Article 2</h1>
+		</article>
+		<article class="noflotante" id="artflo3">
+		  <h1>Article 3</h1>
+		</article>
+	</section>
+	
+	<br><hr><br>
+	
+	<section>
+		<article style="background-color: khaki;">
+			<img src="images/speech.png">
+			<p id="speech">
+			 I'd like to share a revelation during my time here. It came to me when I tried to classify your species. I realized that you're not actually mammals. Every mammal on this planet instinctively develops a natural equilibrium with the surrounding environment but you humans do not. You move to an area and you multiply and multiply until every natural resource is consumed. The only way you can survive is to spread to another area.
+			 There is another organism on this planet that follows the same pattern. Do you know what it is? A virus. Human beings are a disease, a cancer of this planet. You are a plague, and we are the cure.
+			 Can you hear me, Morpheus? I'm going to be honest with you. I hate this place. This zoo. This prison. This reality, whatever you want to call it, I can't stand it any longer. It's the smell, if there is such a thing. I feel saturated by it. I can taste your stink and every time I do, I fear that I've somehow been infected by it.
+			 I must get out of here, I must get free. In this mind is the key. My key. Once Zion is destroyed, there is no need for me to be here. Do you understand? I need the codes. I have to get inside Zion. You have to tell me how.You are going to tell me or you are going to die.
+		</article>
+	</section>
+			
+	<section>
+		<article id="navegacion">
+			<span class="izq">&laquo; Anterior</span>
+			<span class="der">Siguiente &raquo;</span>
+		</article>
+	</section>
+	
+</body>
+</html>

@@ -1,0 +1,45 @@
+body{
+	background-image: url("../images/logoiesserpis.jpg");
+	background-repeat: repeat;
+	/*Por defecto es scroll: la imagen de fondo se desplaza junto con el contenido*/
+	/*background-attachment: fixed;*/
+	}
+section{
+	color:magenta;
+	text-shadow: white 2px 2px 2px;
+	}
+article{
+	width: 70%;
+	height: 50ex;
+	overflow: scroll;
+	background: url(../images/arbol.png);
+	/*Con estas propiedades, el article tiene barra de desplazamiento propia.
+	Por eso, con el attachment scroll (por defecto) el fondo sigue fijo*/
+	/*background-attachment: local;*/
+	background-color: green;
+	
+}
+	
+.caja1 {
+	background-image: url("../images/help.png");
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+.caja2 {
+	background-image: url("../images/help.png");
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+.caja3 {
+	background-image: url("../images/help.png");
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+.caja {
+	border:solid 2px black;
+	font-size:20pt;
+	font-weight:bold;
+	text-align:center;
+	width:6em;
+	font-family:Helvetica;
+}

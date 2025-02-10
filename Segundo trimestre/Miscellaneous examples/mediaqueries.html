@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Media queries DEMO</title>
+	<style>
+		body{
+		text-align: center;
+		}
+		h1{
+			margin-bottom: 60px;
+		}
+		@media screen and (max-width: 700px){
+			body {
+				background: lightblue;
+			}
+		}
+		@media screen and (min-width: 700px) {
+			body {
+				background: yellow;
+			}
+		}
+		@media screen and (min-width: 900px){
+			body {
+				background: lightcoral;
+			}
+		}
+		#floater {
+			border: 2px solid blue;
+			padding: 30px;
+			float: right;
+		}
+		@media screen and (orientation: portrait) {
+			#floater {
+				float: left;
+			}
+		}
+	</style>
+	
+	
+
+</head>
+<body>
+	<br><br><br>
+	<h1> MEDIA QUERIES </h1>
+
+	<p>The current width of the viewport is <span id="vw"></span> px</p>
+	
+	<p id=floater>
+	#floater<br>BLOCK
+	</p>
+	
+	<!--JavaScript code follows. Don't worry about it (yet)-->
+	<script defer>
+		const widthOutput = document.querySelector('#vw');
+		function reportWindowSize() {
+		  widthOutput.textContent = window.innerWidth;
+		}
+		window.onresize = reportWindowSize;
+		window.onload = reportWindowSize;        
+    </script>
+</body>
+</html>

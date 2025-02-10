@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Very simple form</title>
+	</head>
+	<body>
+      <h3>Very simple form</h3>
+      <form action="thankyou.html" method="post" enctype="application/x-www-form-urlencoded" name="myform">
+        <p> User:
+        <br><input type="text" maxlength="15" size="15" name="username" required>
+        <br> Password:
+        <br><input type="password" maxlength="10" size="10" name="clave">      
+        
+        <p>Sex:
+        <br>
+        <input type="radio" name="rSex" value="male">Male<br>
+        <input type="radio" name="rSex" value="female" checked>Female<br>
+		<input type="radio" name="rSex" value="other">Other<br>
+        <p><input type="reset" value="Clear form">
+        <input type="submit" value="Send">		
+      </form>
+      
+      
+    </body>
+</html>

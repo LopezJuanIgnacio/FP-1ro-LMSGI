@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>SEUDO-EJEMPLOS</title>
+	<meta charset="utf-8"/>
+	
+	
+	<style>
+
+		
+		div {
+			border: solid 2px violet;
+			padding: 20px;
+			margin: 50px;
+			font-family: calibri, sans-serif;
+			background: beige;
+		}
+
+		li:nth-child(odd) {
+			color: gold;
+			background: maroon;
+		}
+		li:nth-child(even){
+			color: maroon;
+			background: gold;
+		}
+		a:link {
+			color: red;
+		}
+
+		a:visited {
+			color: lightgrey;
+			text-decoration-color: dodgerblue;
+		}
+
+		a:hover {
+			font-weight: bold;
+			text-decoration: none;
+		}
+
+		a:active {			
+			color:white;
+			background: black;
+		}
+		
+		/*:not(input){
+			background: red;
+		}*/
+		
+		input:focus {
+			border: fuchsia dotted 2px;
+		}
+		input::placeholder {
+			color: lightpink;
+			letter-spacing: 80%;
+		}
+		input:invalid {
+			background: orange;
+		}
+		
+		::selection{
+			color: white;
+			background-color: purple;
+		}
+	
+	</style>
+</head>
+<body>
+	<div>
+		<h3>:nth-child(odd), :nth-child(even)</h3>
+		<ul>
+			<li>The Secret of Monkey Island</li>
+			<li>Monkey Island 2: LeChuck's Revenge</li>
+			<li>The Curse of Monkey Island</li>
+			<li>Escape from Monkey Island</li>
+			<li>Tales from Monkey Island</li>
+			<li>Return to Monkey Island</li>
+		</ul>
+	</div>
+	<div>
+		<h3>:link, :visited, :hover, :active</h3>
+		<a href="https://aules.edu.gva.es/semipresencial/">Aules FP semi</a><br>
+		<a href="https://www.bancosabadell.com">Banco Sabadell</a><br>
+		<a href="https://www.duckduckgo.com">DuckDuckGo</a>
+	</div>
+	<div>
+		<h3>:focus</h3>
+		<form>
+			<input type="text" name="caja1" placeholder="Click me!">
+			<input type="text" name="caja2" placeholder="Click me!">
+			<input type="text" name="caja3" placeholder="Click me!">
+			<h3>:invalid</h3>
+			<fieldset>
+				<legend>Email</legend>
+				<input type=email minlength=15 title="Mín. 15 caracteres"/>
+			</fieldset>
+		</form>
+	</div>
+
+
+<div>
+	<h3>::selection</h3>
+	<p> El veloz murciélago hindú comía feliz cardillo y kiwi.
+</div>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>

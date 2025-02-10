@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Cosillas CSS3</title>
+<meta charset="utf-8"/>
+<style>
+body {
+	padding: 50px;
+}
+
+#borde{
+	margin: 50px 50px 100px;
+	text-align: center;
+	width: 20%;
+	border: 40px solid black;
+	/*border-image-source: url(images/purple_tentacle.png);*/
+	border-image-source: url(images/borde_rombos_bola.png);
+	/*border-image-slice: 35% 0%;*/
+	/*border-image-slice: 35% 35% fill;*/
+	/*border-image-slice: 35% 50%;*/
+	/*border-image-slice: 15% 67%;*/
+	border-image-slice: 35% 35%;
+	/*border-image-width: 1.6;*/
+	/*border-image-width: 50px;*/
+	/*border-image-repeat: round;*/
+	border-image-outset: 30px;
+	background: lightblue;
+}
+
+
+
+#rounded {
+	border: solid 2px red;
+	/*border-radius: 50px 20px;*/
+	border-radius: 50px 0px / 15px 0px;
+	width: 450px;
+	padding: 10px 30px;
+	font-family: sans-serif;
+}
+
+div ul{
+	color: tomato;
+	background: navy;
+	margin: 30px;
+	width: 10%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+	#shadowbox1{
+		box-shadow: 8px 10px grey;
+	}
+	#shadowbox2{
+		box-shadow: -8px 10px 5px grey;
+	}
+	#shadowbox3{
+		box-shadow: 8px 10px 10px silver inset;
+	}
+	#shadowbox4{
+		box-shadow: 8px 10px 10px silver, 11px 13px 5px ;
+	}
+	
+
+</style>
+</head>
+<body>
+
+<h2>Borde con imagen</h2>
+<div id="borde">
+	<b><p>CONTENT<br>HERE</p></b>
+</div>
+
+
+
+<div id=rounded>
+	If two values are given:<br>
+	* First one is for the upper left corner and its opposite.<br>
+	* Second one is for the upper right corner and its opposite.	
+</div>
+
+
+<div>
+	<ul id=shadowbox1>
+		<li>grey shadow</li>
+		<li>no blurring</li>
+		<li>bottom-right</li>
+	</ul>
+	<ul id=shadowbox2>
+		<li>grey shadow</li>
+		<li>blurred</li>
+		<li>bottom-left</li>
+	</ul>
+	<ul id=shadowbox3>
+		<li>silver shadow</li>
+		<li>blurred</li>
+		<li>top left, inset</li>
+	</ul>
+	<ul id=shadowbox4>
+		<li>double shadow</li>
+		<li>first shadow goes first</li>
+		<li>blurred</li>
+		<li>bottom-right</li>
+	</ul>
+
+</div>
+
+<div>
+<br><br>
+	<label>
+		Disk usage F:
+		<meter low=30 high=85 max=100 optimum=80 value=29>29 out of 100</meter>
+	</label>
+</div>
+
+</body>
+</html>

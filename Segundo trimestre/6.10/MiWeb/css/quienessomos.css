@@ -1,0 +1,12 @@
+/*Clase*/
+.dolor {
+  text-shadow: 3px 4px 5px var(--Chocolate-Cosmos);
+  font-style: italic;
+}
+/*Elemento*/
+article p {
+  text-indent: 0.5in;
+}
+article:nth-child(2) {
+  line-height: 150%;
+}

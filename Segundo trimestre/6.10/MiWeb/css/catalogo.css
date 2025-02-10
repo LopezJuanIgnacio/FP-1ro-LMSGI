@@ -1,0 +1,9 @@
+/*Pseudo-clase*/
+tbody td:nth-child(2) {
+    letter-spacing: 0.2em;
+}
+
+/*Pseudo-elemento*/
+tbody tr:nth-child(1) td:nth-child(2)::after {
+    content: url(../images/new_tag.png);
+}
