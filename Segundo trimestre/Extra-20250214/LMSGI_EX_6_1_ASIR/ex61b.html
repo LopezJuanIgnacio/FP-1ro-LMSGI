@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+  <title>Formulario examen</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Página 2 del examen U6.1">
+  <meta name="keywords" content="formulario, imágenes, web">
+  <meta name="author" content="Guillermo Domingo Martínez">
+  <link rel="stylesheet" href="css/exu6-1.css">
+  <link rel="icon" type="image/gif" href="favicon.gif">
+</head>
+<body>
+  <h1 class=centrar>EL SERVICIO WEB</h1>
+  <br>
+  <a href="ex61a.html">
+    <img src="img/l_arrow.png" alt="Página 1">
+  </a>
+  
+  <form action="mailto:examen6_1@lmsgi.net" method=post enctype="multipart/form-data">
+    <p>Nombre: <input name=nAlumno size=70></p><br>
+    <div>
+      <h3><i>Completa el siguiente cuestionario con las respuestas correctas. Pulsa el botón "Enviar" cuando termines.</i></h3>
+      <p>Los servicios web son una realidad gracias al protocolo <input name=protName size=6 maxlength=4>, cuya versión segura se llama <input name=protSecName size=7 maxlength=5>.</p>
+      <p>Ambos usan el protocolo de nivel de transporte 
+        <select name=protTrans>
+	      <option>-Elige-</option>
+	      <option value=TCP>TCP</option>
+	      <option value=UDP>UDP</option>
+        </select>
+      </p>
+      <p>Los puertos de escucha en el servidor para estos protocolos suelen ser <input type=number name=puerto1 min=10 max=1023 title="Valor entre 10 y 1023"> y <input type=number name=puerto2 min=10 max=1023 title="Valor entre 10 y 1023">.</p>
+      <p>El servidor responde a los mensajes de petición del cliente con un código de estado (número + texto)...<br>
+      <label><input type=radio name=radioCuando value=nunca>Nunca</label>
+      <label><input type=radio name=radioCuando value=siBien>Si todo fue bien</label>
+      <label><input type=radio name=radioCuando value=siMal>Si algo fue mal</label>
+      <label><input type=radio name=radioCuando value=siempre>Siempre</label>
+      </p>
+      <p class=centrar>
+	    <img src="img/page.png" alt="Figura 1"><br>
+        <code>Figura 1</code>
+      </p>
+
+      <p>La página de la figura 1 tiene la hoja de estilos en un fichero CSS externo. ¿Cuántas peticiones realiza el navegador web del cliente para poder cargarla completamente?</p>
+      <p class=centrar><input type=range min=1 max=10 name=numPeti value=3></p>
+      <hr>
+      <p>Adjunta tu certificado en formato PDF: <input type=file accept="application/pdf" name=certi></p>
+      <p>Escribe aquí la contraseña proporcionada al comienzo: <input type=password name=secreto></p>
+      <p><input type=submit></p>
+    </div>
+  </form>
+</body>
+</html>
+

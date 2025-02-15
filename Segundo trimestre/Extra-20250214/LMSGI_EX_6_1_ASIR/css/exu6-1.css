@@ -1,0 +1,34 @@
+		#body1 {
+			background: azure;
+		}
+		#titulotabla {
+			background: black;
+			color: beige;
+		}
+			#titulotabla h3 span {
+				background: darkgrey;
+			}
+		#fila1 img {
+			width: 350px;
+			height: auto;
+		}
+		#fila2 img {
+			height: 450px;
+			width: auto;
+		}
+		#columna2 {
+			background: aquamarine;
+		}		
+		.centrar {
+			text-align: center;
+		}
+		code {
+			color: #0000FF;
+		}
+		div {
+			background: plum;
+		}
+		#body1 a > img, a > img {
+			height:65px;
+			width: auto;
+		}

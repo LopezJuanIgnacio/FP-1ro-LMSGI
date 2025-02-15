@@ -1,0 +1,21 @@
+body {
+  background-color: blanchedalmond;
+}
+
+#titulotabla {
+  background: black;
+  color: beige;
+}
+#titulotabla h3 span {
+  background: darkgrey;
+}
+
+#f1 img{
+    width: 350px;
+}
+
+#f2 img{
+    height: 450px;
+}
+
+

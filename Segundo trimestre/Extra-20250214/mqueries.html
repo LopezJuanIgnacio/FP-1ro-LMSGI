@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Consultas de medios</title>
+	<link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+	<p><b>Ejercicio 1</b>
+    <div id="ejercicio1" >
+		<p>El color de fondo de este bloque cambia según el ancho de la pantalla:
+		<ul>
+			<li>si el ancho es menor que 400px, el color será azul</li>
+			<li>si el ancho está entre 400px y 600px, el color será rojo</li>
+			<li>si el ancho es mayor que 600px, el color será verde</li>
+		</ul>
+		<p>El ancho actual es <span id="ancho"></span>
+    </div>
+	<hr/>
+	<p><b>Ejercicio 2</b>
+	<p> En el recuadro siguiente, cuando la pantalla tenga ancho mayor que 600px tendrá como fondo img1.jpg y cuando sea menor tendrá img2.jpg.
+	<div id="ejercicio2">
+	</div>
+	<hr></hr>
+		
+	<p><b>Ejercicio 3</b>
+	<p>Establece el siguiente comportamiento para el contenido del siguiente bloque:
+	<ul>
+		<li>Cuando el ancho de la pantalla supere los 1024px:
+			<ul>
+			<li>El tamaño de la fuente del #ejercicio3 será del 200% y tendrá 0px de márgenes sup/inf y 20% de izq/der.</li>
+			<li>Los elementos &lt;section&gt; tendrán overflow:auto y márgenes sup/der de 10px e inf de 20px.</li>
+			<li>Los elementos &lt;article&gt; tendrán ancho 40%, márgenes sup/inf de 10px e izq/der del 40%, con posicionamiento flotante a la izquierda.
+			</ul>
+		</li>
+		<li>Cuando el ancho de la pantalla no supere los 1024px:
+			<ul>
+			<li>El tamaño de letra del #ejercicio3 será del 120% y tendrá 0px de márgenes sup/inf y 10% de izq/der.</li>
+			<li>Los elementos &lt;section&gt; tendrán un margen de 10px.</li>
+			<li>Los elementos &lt;article&gt; tendrán márgenes sup/inf de 20px e izq/der de 10px.</li>
+			</ul>		
+		</li>
+			
+	</ul>
+	<div id="ejercicio3">
+	
+	  <h1>Sucedió un 14 de diciembre</h1>
+
+	  <main>
+		<section>
+		  <h2>Edad media</h2>
+
+		  <article>
+			<h3>557</h3>
+			<p>Un violento terremoto destruye gran parte de Constantinopla.</p>
+		  </article>
+
+		  <article>
+			<h3>1287</h3>
+			<p>Graves inundaciones en el noroeste de Holanda provocan más de 50.000 muertos.</p>
+		  </article>
+		</section>
+
+		<section>
+		  <h2>Edad moderna</h2>
+
+		  <article>
+			<h3>1542</h3>
+			<p>María Estuardo es proclamada Reina de Escocia.</p>
+		  </article>
+
+		  <article>
+			<h3>1782</h3>
+			<p>Los hermanos Montgolfier realizan el primer vuelo de prueba en globo.</p>
+		  </article>
+		</section>
+
+		<section>
+		  <h2>Edad contemporánea</h2>
+
+		  <article>
+			<h3>1812</h3>
+			<p>El ejército napoleónico se retira derrotado de Rusia.</p>
+		  </article>
+
+		  <article>
+			<h3>1819</h3>
+			<p>Alabama se convierte en el 22º estado de EEUU.</p>
+		  </article>
+
+		  <article>
+			<h3>1900</h3>
+			<p>Max Planck presenta en una conferencia la hipótesis de que la energía electromagnética sólo se puede emitir en cantidades discretas, no contínuas.</p>
+		  </article>
+
+		  <article>
+			<h3>1911</h3>
+			<p>La expedición dirigida por Roald Amundsen alcanza el polo Sur.</p>
+		  </article>
+
+		  <article>
+			<h3>1947</h3>
+			<p>El estadio Santiago Bernabéu (del Real Madrid F.C ) acoge su primer partido de fútbol.</p>
+		  </article>
+		</section>
+	  </main>
+
+	  <footer>
+		<p>Información obtenida en la Wikipedia</p>
+	  </footer>
+	</div>
+	
+	
+	
+	
+	
+	
+    <script>
+		const widthOutput = document.querySelector('#ancho');
+		function reportWindowSize() {
+		  widthOutput.textContent = window.innerWidth;
+		}
+		window.onresize = reportWindowSize;
+		window.onload = reportWindowSize;        
+    </script>
+</body>
+</html>

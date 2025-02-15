@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Pagina 2</title>
+    <meta name="description" content="Segundo ejercicio del examen" />
+    <meta name="keywords" content="examen, html, css" />
+    <meta name="author" content="Juan Ignacio Lopez" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/estilo1.css" />
+    <link rel="stylesheet" href="./css/pagina2.css" />
+    <link rel="icon" type="image/gif" href="favicon.gif">
+  </head>
+  <body>
+    <h1>El servicio web</h1>
+    <a href="./1.html">
+      <img class="flecha" src="./img/l_arrow.png" />
+    </a>
+    <br />
+    <form
+      method="post"
+      action="mailto:examen6_1@lmsgi.net"
+      enctype="multipart/form-data"
+    >
+      Nombre: <input name="nombre" size="70" />
+      <div>
+        <h3>
+          <i
+            >Completa el siguiente cuestionario con las respuestas correctas.
+            Pulsa el botón "Enviar" cuando termines.</i
+          >
+        </h3>
+        <p>
+          Los servicios ... <input name="protocolo" maxlength="4" /> cuya
+          version .... <input name="version" maxlength="5" />
+        </p>
+        <p>
+          ambos ....
+          <select>
+            <option selected>-Elige</option>
+            <option value=TCP>TCP</option>
+            <option value=UDP>UDP</option>
+          </select>
+        </p>
+        <p>Los puertos... <input name="puerto1" type="number" min="10" max="1023"  title="10 a 1023"/> y <input name="puerto2" type="number" min="10" max="1023" title="10 a 1023"/></p>
+        <p>El servidor responde <br> 
+          <label><input type="radio" name="respuesta" value="Nunca" /> Nunca</label>
+          <label><input type="radio" name="respuesta" value="Bien" /> Bien</label>
+          <label><input type="radio" name="respuesta" value="Mal" /> Mal</label>
+          <label><input type="radio" name="respuesta" value="Siempre" /> Siempre</label>
+        </p>
+
+        <div class="dCentrar">
+          <img src="./img/page.png" >
+          <code>Figura 1</code>
+        </div>
+        <p>La pagina...</p>
+        <div class="dCentrar">
+          <input type="range" min="0" max="10" value="3"  step="1" name="nPeticiones" />
+        </div>
+        <hr>
+        <p>Adjunta... <input type="file" accept="application/pdf" name="archivo" /></p>
+        <p>Escribe .... <input type="password" /> </p>
+        <input type="submit" />
+      </div>
+    </form>
+  </body>
+</html>
