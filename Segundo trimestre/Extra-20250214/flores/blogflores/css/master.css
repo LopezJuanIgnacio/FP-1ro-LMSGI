@@ -1,0 +1,491 @@
+/*------------------------------
+Características básicas
+------------------------------*/
+
+@font-face {
+	font-family: 'Floral Suave';
+	src: url(../fonts/FloralSuave-Regular.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header, footer, section, aside, nav, article {
+	display: block;
+}
+
+body {
+	margin: 0 auto;
+	padding: 22px 0;
+	width: 940px;
+	background-color: #F0F0F0;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	background-image: linear-gradient(1turn, forestgreen, limegreen, yellowgreen );
+	
+}
+
+h1, h2 {
+	font-size: 28px;
+	padding: 22px 0;
+	line-height: 44px;
+	color: #003300;
+}
+
+h1{
+	font-size: 40px;
+	font-family: 'Floral Suave';
+}
+
+h3 {
+	font-size: 18px;
+	padding: 11px 0;
+	line-height: 22px;
+}
+
+p {
+	padding-bottom: 22px;
+}
+
+
+
+/*------------------------------
+Elemento nav
+------------------------------*/
+
+nav {
+	position: absolute;
+	left: 0;
+	right: 0;
+	background: url(../img/nav_background.png);
+	
+}
+
+	nav ul {
+		margin: 0 auto;
+		width: 940px;
+		overflow: hidden;
+		list-style: none;
+		
+	}
+
+		nav ul li {
+			
+			/*elementos flotantes hacia la izquierda
+			márgenes sup/inf 0px e izq/der 8px*/
+			float: left;
+			margin: 0px 8px;
+		}
+		
+			nav ul li a {
+				/*Deben visualizarse como elementos de bloque
+				margen  derecho de 20px
+				ancho 140px
+				tamaño de letra 14px
+				interlineado de 44px
+				Alineacion de párrafo centrado
+				Sín línea inferior que indique que es un hiperenlace
+				color del texto hexadecimal 777777*/
+				display: block;
+				margin-right: 20px;
+				width: 140px;
+				font-size: 14px;
+				line-height: 44px;
+				text-align: center;
+				text-decoration: none;
+				color: #777777;
+				
+			}
+			
+				nav ul li a:hover {
+					/*
+					color del texto 70,215,18 rgb con alpha de 0.8*/
+					color: rgba(70,215,18 , 0.8);
+				}
+			
+			nav ul li.selected a {
+				color: #fff;
+			}
+			
+			nav ul li.suscripcion a {
+				/*
+				margen izquierdo de 22px
+				padding izquierdo de 33px
+				Alineación de párrafo izquierda
+				imagen de fondo rss.png sin repetición situada a la izquierda y el centro*/
+				margin-left: 22px;
+				padding-left: 33px;
+				text-align: left;
+				background: url(../img/rss.png) no-repeat center left;
+			}
+
+
+
+/*------------------------------
+Introducción
+------------------------------*/
+
+#intro {
+	/*
+	posición relativa
+	margen superior de 66px
+	padding de 44px
+	color de fondo hexadecimal 467612
+	imagen de fondo intro_background.png con repetición en el eje x
+	El borde redondeado debe tener un radio de 22px */
+	position: relative;
+	margin-top: 66px;
+	padding: 44px;
+	background-color: #467612;
+	background: url(../img/intro_background.png) repeat-x;
+	border-radius: 22px;
+	background-size: 100%;
+}
+
+	#intro h2, #intro p {
+		/*
+				posición relativa
+				ancho de 336px 
+				posición de las cajas muy alta en el eje Z*/
+		position: relative;
+		width: 336px;
+		z-index: 100;
+	}
+	
+	#intro h2 {
+		/*
+			padding de 22px en la parte inferior y de 0 en el resto
+			color de texto hexadecimal ffffff
+			grosor de letra normal */
+		padding-bottom: 22px;
+		color: #fff;
+		font-weight: normal;
+	}
+	
+	#intro p {
+		/*
+		padding de 0px
+		color de texto hexadecimal d9f499
+		*/
+		padding: 0px;
+		color: #d9f499;
+	}
+	
+	#intro img {
+		/*
+		posición absoluta a 0px del borde superior y a 0px del borde derecho
+		ancho 653px
+		alto del 100%
+		El borde redondeado debe tener un radio de 22px*/
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 65px;
+		height: 100%;
+		border-radius: 22px;
+	}
+
+
+
+/*------------------------------
+área principal y barra lateral
+------------------------------*/
+
+#content {
+	display: table;
+}
+
+	#mainContent {
+		display: table-cell;
+		/*
+		ancho 620px
+		padding derecho de 22px e izquierdo de 5px
+		borde superior izquierdo redondeado 22px
+		color de fondo lightgrey*/
+		width: 620px;
+		padding-right: 22px;
+		padding-left: 5px;
+		border-top-left-radius: 22px;
+		background-color: lightgray;
+		
+	}
+	
+	aside {
+		display: table-cell;
+		/*
+		ancho 620px
+		imagen de fondo sidebar_background.png
+		borde superior derecho redondeado 22px*/
+		width: 620px;
+		background: url(../img/sidebar_background.png);
+		border-top-right-radius: 22px;
+	}
+
+
+
+/*------------------------------
+Artículos del blog
+------------------------------*/
+.blogPost header p, .blogPost header p a {
+	/*
+	tamaño del texto 14px
+	cursiva
+	color del texto hexadecimal 777777 */
+	font-size: 14px;
+	font-style: italic;
+	color: #777777;
+}
+	
+	.blogPost header p a:hover {
+		/*
+		Sin línea  inferior que indique que es un hiperenlace
+		color del texto hexadecimal 000000*/
+		text-decoration: none;
+		color: #000;
+	}
+
+.blogPost div {
+	/* 
+		División del texto en dos columnas
+		Separación entre columnas 22px
+	*/
+	column-count: 2;
+	column-gap: 22px;
+}
+	
+.blogPost img {
+	
+	/* margen superior/inferior de 22px y derecho/izquierdo 0px
+	sombra de color hexadecimal 777777 de desplazamiento 3px horizontal, 3px vertical y difuminado de 7px 
+	*/
+	margin: 22px 0;
+	text-shadow: 3px 3px 7px #777777;
+	
+}
+
+
+
+/*------------------------------
+Comentarios
+------------------------------*/
+
+#comments {
+	/* margen superior de 21px  
+	padding superior de 22px  
+	borde superior de 1px solido color hexadecimal d7d7d7
+	*/
+	margin-top: 21px;
+	padding: 22px;
+	border-top: 1px solid #d7d7d7;
+}
+
+	#comments article {
+		display: table;
+		/*
+		padding de 22px  
+		 
+		*/
+		padding: 22px;
+	}
+	
+	#comments article:nth-child(odd) {
+		/* padding de 21px 
+		Color de fondo hexadecimal e3e3e3
+		borde de 1px solido color hexadecimal d7d7d7 
+		El borde redondeado debe tener un radio de 11px
+		*/
+		padding: 21px;
+		background-color: #e3e3e3;
+		border: 1px solid #d7d7d7;
+		border-radius: 11px;
+	}
+	
+		#comments article header {
+			display: table-cell;
+			/*
+			ancho de 220px  
+			padding derecho de 22px  
+			*/
+			width: 220px;
+			padding-right: 22px;
+			
+		}
+		
+			#comments article header a {
+				/*
+				Se visualizará como elemento de bloque
+				Negrita
+				color hexadecimal 000000
+				*/
+				display: block;
+				font-weight: bold;
+				color: #000;
+		
+			}
+			
+				#comments article header a:hover {
+					/*Sin línea  inferior que indique que es un hiperenlace*/
+					text-decoration: none;
+				}
+		
+		#comments article p {
+			/* padding de 0*/
+			padding: 0;
+		}
+
+
+/*------------------------------
+Barra lateral
+------------------------------*/
+aside section {
+	/* margen superior de 22px, derecho 0px, inferior de 0px e izquierdo de 22px
+	padding superior/inferior de 11px y derecho/izquierdo 22px
+	imagen de fondo que se repite en el eje x: sidebar_section_background.png
+	el borde redondeado tiene radio de 11px 
+	*/
+	margin: 0;
+	margin-top: 22px;
+	margin-left: 22px;
+	padding: 11px 22px;
+
+}
+
+	aside section ul {
+		/* margen izquierdo de 22px, el resto 0px
+		los elementos de lista no deben tener viñeta */
+		margin-left: 22px;
+		list-style: none;
+	}
+	
+		aside section ul li a {
+			/*Se visualizará como elemento de bloque
+			Sin línea inferior que indique que es un hiperenlace
+			color del texto hexadecimal 000000*/
+			display: block;
+			text-decoration: none;
+			color: #000;
+		}
+		
+			aside section ul li a:hover {
+				/*Con línea inferior que indique que es un hiperenlace*/
+				text-decoration: underline;
+			}
+
+
+
+/*------------------------------
+Pie
+------------------------------*/
+footer {
+	/*posición absoluta a 0px del borde izquierdo y del derecho
+	ancho 100%
+	color de fondo hexadecimal 003300*/
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	background-color: #003300;
+}
+
+	footer div {
+		display: table;
+		/*
+		margen superior/inferior de 0px y derecho/izquierdo automático
+		padding superior/inferior de 44px y derecho/izquierdo de 0px
+		ancho 940px
+		color del texto hexadecimal 777777*/
+		margin: 0 auto;
+		padding: 44px 0;
+		width: 940px;
+		color: #777777;		
+	}
+	
+		footer div section {	
+			display: table-cell;
+			/*
+			ancho de 300px*/
+			width: 300px;
+		}
+		
+		footer div #about, footer div #blogroll {
+			/*padding derecho de 20px*/
+			padding-right: 20px;
+		}
+		
+	footer h3 {
+		/* color de texto ffffff */
+		color: #fff;
+	}
+	
+	footer a {
+		/* color de texto 999999 */ 
+		color: #999;
+	}
+	
+		footer a:hover {
+			/* color de texto 170,215,18 en notacion rgb con alpha de 0.8
+			Sin línea inferior que indique que es un hiperenlace*/
+			color: rgba(170,215,18 , 0.8);
+			text-decoration: none;
+		}
+		
+	footer ul {
+		/* margen izquierdo de 40px el resto debe ser 0
+		la viñeta de los elementos de lista debe ser un cuadrado
+		color del texto 565656 
+		*/
+		margin-left: 40px;
+		list-style-type: square;
+		color: #565656;
+	}
+	
+		footer ul li a {
+			/*se debe visualizar como elemento de bloque*/
+			display: block;			
+		}
+
+
+
+
+
+
+
+nav a{
+	transition: transform .7s ease-in-out;
+}
+nav a:hover{
+	transform: scale(150%);
+}
+
+@media screen and (width < 940px) {
+	body{
+		overflow: scroll;
+	}
+	nav, footer{
+		position: relative;
+	}
+}
+
+@media screen and (orientation: portrait) {
+	#content{
+		display: block;
+	}
+	#mainContent{
+		display: block;
+		width: 915px;
+		border-radius: 22px;
+	}
+	aside{
+		display: block;
+		width: 940px;
+		background-size: contain;
+		border-radius: 22px 22px 0 0;
+	}
+	aside section{
+		display: inline-block;
+		width: 240px;
+		vertical-align: top;
+	}
+}
