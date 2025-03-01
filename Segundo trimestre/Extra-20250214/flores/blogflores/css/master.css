@@ -1,7 +1,3 @@
-/*------------------------------
-Características básicas
-------------------------------*/
-
 @font-face {
 	font-family: 'Floral Suave';
 	src: url(../fonts/FloralSuave-Regular.ttf);
@@ -456,7 +452,7 @@ nav a{
 	transition: transform .7s ease-in-out;
 }
 nav a:hover{
-	transform: scale(150%);
+	transform: scale(1.5);
 }
 
 @media screen and (width < 940px) {

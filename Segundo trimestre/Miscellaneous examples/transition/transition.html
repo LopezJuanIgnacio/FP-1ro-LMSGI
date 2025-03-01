@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Transiciones CSS3</title>
+	<meta charset="utf-8"/>
+	<style>
+		* {
+			margin: 25px;
+		}
+		div{
+			height: 40px;
+			width: 110px;
+		}
+			
+		#caja1{
+			background: green;
+			height: 50px;
+			width: 70px;
+			transition: width 3s;
+			transition-timing-function: linear;
+			/*transition-timing-function: steps(6)*/;
+		}
+
+			#caja1:hover{
+				width: 600px;
+			}
+			
+		#caja2{
+			border: 1px solid purple;
+			transition: transform 1.5s;
+			transition-timing-function: ease-in-out;
+		}
+			#caja2:hover{
+				transform: skew(30deg);
+			}
+			
+		#spinner{
+			background-image: repeating-conic-gradient(from -23deg, red 0% 12%, black 12% 12.5%, white 12.5% 24.5%, black 24.5% 25%);
+			border: 2px solid black;
+			border-radius: 35%;
+			height: 110px;
+			transition-property: transform;
+			transition-duration: 1.5s;
+		}
+			#spinner:hover{
+				transform: rotateY(0.5turn);
+			}
+			
+		#roll{
+			width: 570px;
+			height: auto;
+			transform-origin:top;
+			transition-property: transform;
+			transition-duration: 1.5s;
+			border: 1px solid black;
+		}
+			#roll:hover{		
+				transform: translateY(95px) rotateX(180deg);
+			}
+			
+		#trans1{
+			border-radius:50%;
+			text-align: center;
+			padding-top: 10px;
+			background-color: aquamarine;
+			font-size: 14pt;
+			color : peru;	
+			transition-property: width, background-color, color, font-size;
+			transition-duration: 1s, 1s, 2s, 1s;
+		}
+			#trans1:hover{
+				font-size: 18pt;
+				color: white;
+				background-color: navy;
+				width: 150px;
+			}
+		
+			
+	</style>
+</head>
+<body>
+	
+	<div id=caja1>
+		ancho
+	</div>
+	
+	<div id=caja2>
+		me inclino
+	</div>
+	
+	<div id=spinner>
+	</div>
+	
+	<div id=roll>
+		<img src="images/logoiesserpis.jpg" alt="logo ies serpis">
+	</div>
+	
+	<div id=trans1>
+		CONTENIDO
+	</div>
+	
+	
+</body>
+</html>
