@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Citas Motivacionales</title>
+    <style>
+      #quote-container {
+        position: absolute;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="quote-container">Texto de prueba</div>
+    <video id="motivational-video" src="example_MP4.mp4" width="600" controls>
+      Tu navegador no soporta el video.
+    </video>
+    <button id="stop-timer">Detener Temporizador</button>
+    <script>
+
+
+      //Cargar frases
+      async function cargarFrases () {
+        try {
+
+          const response = await fetch("quotes.json");
+          const frases = await response.json();
+          console.log(frases.quotes);
+          titulo = document.getElementById('quote-container');
+          titulo.innerText= frases.quotes[0].text
+
+          // Temporizador
+          temporizador= setInterval(() => {
+            numFrase = Math.floor(Math.random()*4);
+            titulo.innerText= frases.quotes[numFrase].text
+          }, 5000);
+
+
+        } catch (error) {
+          console.error("Error al cargar las frases ", error)
+        }
+      }
+
+      cargarFrases();
+
+      // Detener temporizador
+      detener = document.getElementById('stop-timer');
+      detener.addEventListener('click', ()=>{
+        clearInterval(temporizador);
+      });
+
+      // Volumen al 10%
+      video = document.getElementById('motivational-video');
+      video.volume=.1;
+ 
+    </script>
+  </body>
+</html>

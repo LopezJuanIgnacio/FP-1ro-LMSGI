@@ -1,0 +1,249 @@
+@charset "utf-8";
+@font-face{
+	font-family: baskervville;
+	src: url(../fonts/Baskervville-Regular.ttf);
+}
+@font-face {
+	font-family: final;
+	src: url(../fonts/finalf.woff);
+}
+@font-face {
+	font-family: overpass;
+	src: url(../fonts/Overpass-Regular.ttf);
+}
+@font-face {
+	font-family: brush;
+	src: url(../fonts/brushscriptstd.ttf);
+}
+
+* {
+}
+body {
+	background: #524948bb;
+	color: #ffffff;
+	font-family: overpass;
+}
+aside, footer {
+	background: rgb(87, 70, 123);
+	color: 	rgb(202, 254, 72);
+}
+aside {
+	float:left;	
+}
+footer {
+	font-family: "courier new";
+	border-color: rgb(202,254,72);
+	border-width: 10px 20px;
+	border-style: hidden dotted dashed solid;
+	padding: 15px;
+}
+header {
+	color: mediumturquoise;
+	background: hsl(6, 6%, 30%);
+}
+	h1 {
+		font-family: final;
+		font-size: 400%;
+	}
+
+body > nav {
+	background: #57467B;
+	color: #cafe48;
+	font-family: "courier new";
+	padding: 5px 0px;
+	border: 5px groove;
+	/*sup. NIA es 12345678*/
+	border-color: hsl(154, 56%, 78%) hsl(154, 56%, 22%) hsl(154, 56%, 22%) hsl(154, 56%, 78%);
+	position: sticky;
+	top: 10px;
+}
+	nav ul {
+		border: 1px dotted #cafe48;
+		text-align: center;
+		margin: 0px 80px;
+		padding: 0px;
+	}
+		nav ul li{
+			display: inline-block;
+			background-color: #fff;
+			margin: 5px 10px;			
+		}
+		nav ul li a {
+			padding: 0px 10px;
+		}
+			nav ul li a:link {
+				color: hsl(6, 6%, 30%);
+			}
+			nav ul li a:visited {
+				color: hsl(6, 6%, 30%);
+				text-decoration-color: #fff;
+			}
+			nav ul li a:hover{
+				font-weight: bold;
+				text-transform: uppercase;
+				font-size: 120%;
+			}
+		nav span {
+			background-color: hsl(6,6%,30%);
+			color: #fff;
+			padding: 0 10px;
+		}
+
+/*Título de <section> con opacidad 50%*/
+#sectiontitle {
+	color: hsla(77, 99%, 64%, 50%);
+	text-shadow: hsl(6, 6%, 30%) -1px 1px;
+}
+
+
+#sectiontitle~article {
+	background: hsl(6, 6%, 30%);
+	color: 	hsl(153, 91%, 71%);
+	margin-left: 285px;
+}
+	/*Títulos de <article> con opacidad 50%*/
+	#sectiontitle~article h2, #sectiontitle~article h3 {
+		color: 	hsla(153, 91%, 71%, 50%);
+	}
+
+section #article2 {
+	background-color: hsl(184, 30%, 60%);
+	color: hsl(0, 0%, 0%);
+	line-height: 150%;
+}
+	/*Títulos del segundo <article> con opacidad 50%*/
+	section #article2 h2, section #article2 h3 {
+		color: hsla(0, 0%, 0%, 50%);
+	}
+	h2, h3 {
+		font-family: baskervville;
+	}
+
+img {
+	width: 50px;
+	height: 50px;
+}
+/*Selector combinador de atributo, "alt contiene Bota"*/
+	[alt*="Bota"] {
+		width: 120px;
+		height:120px;
+	}
+	[alt*="esquina"] {
+		position: fixed;
+		bottom: 30px;
+		right: 30px;
+		height: 150px;
+		width: auto;
+	}
+	
+table, td {
+	border: solid white 1px;
+}
+	td {
+		color: black;
+	}
+	caption {
+		font-style: italic;
+		font-size: 22px;
+	}
+	table img {
+		width: 150px;
+		height: auto;
+	}
+	th {
+		background: #cafe48;
+		color: #57467B;
+		font-size: 140%;
+	}
+	#tabladesc {
+	background: #cafe48;
+	}
+	.descrip {
+		letter-spacing: 0.2ch;
+	}
+	tr:nth-child(2) td:nth-child(2)::after {
+		content: url(../images/new_tag.png);
+	}
+	
+.dolor {
+	text-shadow: 3px 4px 5px #cafe48;
+	font-style: italic;
+}
+.ipsum {
+	text-decoration: underline;
+	text-decoration-color: #cafe48;
+}
+#body_e article p, #body_q article p {
+	text-indent: 0.5in;
+}
+#body_e article p::first-letter {
+	font-size: 300%;
+	font-family: brush;
+}
+aside, nav, section {
+	margin: 50px;
+}
+section {
+	padding: 10px 15px;
+}
+
+
+/*sólo la sección de miempresa.html --> identificación del <body> de ese fichero*/
+#body_e section {	
+	background: url(../images/azulejos.png) 20% 20%;
+}
+	/*segundo <article> de la sección de miempresa.html --> selector de hermano*/
+	/*"hermano del hermano del <h2> contenido en el <section> contenido en el <body> de miempresa.html"*/
+	#body_e section h2 + article + article{	
+		background-image: url(../images/azulejos.png);
+		height: 30ex;
+		overflow: auto;
+		background-attachment: local;
+	}
+	#body_e section a {
+	    margin-left: 285px;
+		position: absolute;
+		z-index: 3;
+	}
+	#body_e section a + a{
+		display: inline-block;
+		background-color: #cafe48;
+		bottom: 0px;
+		left: -10px;
+		z-index: 2;
+		height: 50px;
+		width: 50px;
+	}
+	#body_e article + div {
+		position: relative;
+		height: 60px;
+	}
+	
+@media screen and (max-width: 1000px) {
+	nav ul {
+		margin: 0px 6vw;
+	}
+	nav ul li {
+		font-size: 1.4vw;
+	}
+}
+@media screen and (max-width:800px) {
+	aside {
+		display: none;
+	}
+	#sectiontitle ~ article {
+		margin-left: 50px;
+	}
+}
+	
+
+	
+
+
+
+
+
+
+
+
+
