@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">		
+	<link rel="stylesheet" href="css/forms.css">
+	<title>Formularios</title>
+	<meta name="description" content="Formularios práctica 6.5">
+	<meta name="keywords" content="formularios, práctica, html, recolección de datos">
+	<meta name="author" content="Guillermo Domingo Martínez">
+</head>
+<body>
+	<div id=divform1>
+		<h2>Formulario 1</h2>
+		<form action="mailto:lmsgi_u6p5.ejemplo.com" method=post enctype="application/x-www-form-urlencoded">
+			<b>Nombre y apellido (*)<br></b>
+			<input name=vName1 required size=45>
+			<hr>
+			<b>Correo electrónico (*)<br></b>
+			<input type=email name=vEmail1 required size=45>
+			<p><b>Teléfono</b><br>
+			<input type=tel name=vPhone size=12 pattern="+34[6-9][0-9]{8}" title="Prefijar +34">
+			<hr>
+			<b>Sexo</b><br>
+			<label><input type=radio name=vSexo1 value=hombre>Hombre</label>
+			<label><input type=radio name=vSexo1 value=mujer checked>Mujer</label>
+			<label><input type=radio name=vSexo1 value=otro>Otro</label>
+			<hr>
+			<b>Fecha de nacimiento:</b><br>
+			<input type=date name=vBirthDate value=2007-01-01>
+			<hr>
+			<b>Intereses</b><br>
+			<label><input type=checkbox name=vIntDeporte>Deporte</label>
+			<label><input type=checkbox name=vIntPolítica>Política</label>
+			<label><input type=checkbox name=vIntTecno>Tecnología</label>
+			<label><input type=checkbox name=vIntFilatelia>Filatelia</label>
+			<hr>
+			<b>Comentarios</b><br>
+			<textarea rows=4 cols=50 name=vComent placeholder="Máx. 150 caracteres" maxlength=150></textarea>
+			<p> (*) Campos requeridos
+			<p><input type=submit value="Enviar datos">
+			<input type=reset value="Limpiar formulario">		
+		</form>
+	</div>	
+	<div id=divform2>
+		<h2><u>Formulario 2</u></h2>
+		<form id=form2 action="php/programa.php" method=post enctype="multipart/form-data">
+			<p><b>usuario</b>
+			<p>login:
+			<input type=email placeholder="dir. correo" name=vLogin>
+			password:
+			<input type=password name=vPassword>
+			<fieldset>
+				<legend><b>DATOS PERSONALES</b></legend>
+				<table>
+					<tr>
+						<td>Nombre:</td>
+						<td><input name=vNombre><br></td>
+					</tr>
+					<tr>
+						<td>Apellidos:</td>
+						<td><input name=vApellidos size=50></td>
+					</tr>
+				</table>
+				<p>Estatura: <input type=number name=vEstatura value=1.60 step=0.01 min=1.2 max=2.5>
+			<p>Fotografía: <input type="file" accept="image/*" name=vFoto>
+			</fieldset>
+			<fieldset>
+				<legend><b>DATOS ESTUDIANTE</b></legend>
+				Ciclo: 
+				<select name=vCiclo>
+					<option value="SMR">SMR</option>
+					<option value="ASIR">ASIR</option>
+					<option value="DAM" selected>DAM</option>
+					<option value="DAW">DAW</option>
+				</select>
+				<br>Curso:
+				1º
+				<input type=range min=1 max=2 tabindex=-1>
+				2º
+				<p><b>AFINIDAD:</b>
+				<table>
+					<tr>
+						<td><label><input type=radio name=vPref value=hardware>Hardware</label></td>
+						<td><label><input type=radio name=vPref value=redes>Redes</label></td>
+						
+					</tr>
+					<tr>
+						<td><label><input type=radio name=vPref value=sistemas>Sistemas</label></td>
+						<td><label><input type=radio name=vPref value=seguridad>Seguridad</label></td>
+					
+					<tr>
+						<td><label><input type=radio name=vPref value=progFront>Prog. Front</label></td>
+						<td><label><input type=radio name=vPref value=progBack>Prog. Back</label></td>
+						
+					</tr>
+					<tr>					
+						<td><label><input type=radio name=vPref value=bd>Bases de datos</label><br></td>
+						<td></td>
+					</tr>
+				</table>
+				
+				
+				
+				
+				
+				
+							
+			</fieldset>
+			<input type=image src="images/send.png" alt="Enviar formulario">
+		</form>
+	</div>
+	
+	
+</body>
+</html>

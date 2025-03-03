@@ -1,0 +1,46 @@
+@charset "utf-8";
+/*Reglas formulario 1*/
+#divform1 h2 {
+	text-align: center;
+	font-family: sans-serif;
+}
+
+#divform1 form {
+	font-family: sans-serif;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding: 10px;
+	background: lightgrey;
+	border-color: grey;
+	border-style: solid;
+	border-width: 8px;	
+}
+
+textarea ~ p {
+	font-size: 12px;
+}
+
+/*Reglas formulario 2*/
+#divform2 {
+	background: lightgreen;
+	font-family: consolas;
+}
+	#divform2 h2 {
+		color: lightseagreen;
+		font-size: 50px;
+		text-align: center;
+	}
+	#divform2 form {
+		margin-left: 50px;
+		margin-right: 50px;
+		padding: 10px;
+	}
+
+input[type=range] {
+	width: 40px;
+}
+input[type=image] {
+	margin-left: 100px;
+}
+
+
