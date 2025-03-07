@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" >
+        <title>Encuesta</title>
+        <meta name="description" content="Examen de LMSGI, Ejercicio 3 sobre formularios" >
+        <meta name="keywords" content="Examen, Encuesta, Form, Formulario, Gatos " >
+        <meta name="author" content="Juan Ignacio Lopez" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link rel="stylesheet" href="./css/encuesta.css" >
+        <link rel="icon" type="image/png" href="gatito_f.png">
+    </head>
+    <body>
+        <h1>CAT REPORT CARD</h1>
+        <form method="post" action="./scripts/form_script.php" enctype="application/x-www-form-urlencoded">
+            <label id="nombre">
+                Nombre: <input type="text" title="Nombre" name="Nombre" />
+            </label>
+            <label>
+                Fecha: <input type="date" title="Fecha" name="Fecha" value="2025-03-07" />
+            </label>
+            <br>
+            <fieldset>
+                <legend>¿COMO ME HE PORTADO?</legend>
+                <table id="tablaConducta">
+                    <tbody>
+                        <tr>
+                            <th rowspan="4">
+                                <input type="range" min="1" max="4" step="1" />
+                            </th>
+                            <th>Absolutamente perfecto!</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                Por encima de la media!
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                Podria haberlo hecho mejor!
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                Un poco travieso... pero sere bueno la proxima vez!
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>ORINAL </legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th><label> PIPI <input type="number" min="1" max="8" title="numPipi" name="numPipi" /> </label></th>
+                            <th><label> <input type="radio" name="estadoPipi" value="Normal" /> Normal </label></th>
+                            <th><label> <input type="radio" name="estadoPipi" value="Anormal" /> Anormal </label></th>
+                        </tr>
+                        <tr>
+                            <th><label> CACA <input type="number" min="1" max="8" title="numCaca" name="numCaca" /> </label></th>
+                            <th><label> <input type="radio" name="estadoCaca" value="Normal" /> Normal </label></th>
+                            <th><label> <input type="radio" name="estadoCaca" value="Anormal" /> Anormal </label></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>
+                            <fieldset>
+                                <legend>Comidas</legend>
+                                <label> <input type="radio" name="comidas" value="todo" /> Me lo he comido todo </label> <br>
+                                <label> <input type="radio" name="comidas" value="poquito" /> He comido poquito </label> <br>
+                                <label> <input type="radio" name="comidas" value="quisquilloso" /> Un poco quisquilloso </label> <br>
+                                <label> <input type="radio" name="comidas" value="nada" /> No tenia apetito</label> <br>
+                            </fieldset>
+                        </th>
+                        <th>
+                            <fieldset>
+                                <legend>Ingesta de agua</legend>
+                                <label> <input type="radio" name="ingestaAgua" value="bastante" /> bebi bastante </label> <br>
+                                <label> <input type="radio" name="ingestaAgua" value="siempre" /> bebi lo de siempre </label> <br>
+                                <label> <input type="radio" name="ingestaAgua" value="menos" /> bebi algo de menos</label> <br>
+                                <label> <input type="radio" name="ingestaAgua" value="nada" /> No bebi nada</label> <br>
+                            </fieldset>
+                        </th>
+                        <th>
+                            <fieldset >
+                                <legend>Sueño</legend>
+                                <select name="sueño" size="3">
+                                    <option value="genial">Dormi genial</option>
+                                    <option value="ok">Dormi ok</option>
+                                    <option value="no">no he pegado ojo</option>
+                                </select>
+                            </fieldset>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+            <label>
+                Comentarios <br>
+                <textarea title="Comentarios" name="Comentarios" rows="2" cols="50" placeholder="Maximo 150 caracteres" maxlength="150" > </textarea>
+            </label> <br>
+            <input type="submit" value="miau" />
+        </form>
+    </body>
+</html>

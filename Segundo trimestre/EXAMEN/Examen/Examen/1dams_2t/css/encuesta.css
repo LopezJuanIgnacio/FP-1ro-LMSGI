@@ -1,0 +1,68 @@
+@charset "utf-8";
+@font-face {
+	font-family: 'MV Boli';
+	src: url(../fonts/mvboli.ttf);
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+    font-family: 'MV Boli', sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    width: 70%;
+    min-width: 600px;
+    margin: auto;
+}
+
+fieldset{
+    padding: 10px 30px;
+    transition-duration: 1s;
+    transition-property: background;
+    transition-timing-function: linear, steps(7);
+}
+
+input[type="range"]{
+    transform: rotate(-90deg);
+}
+
+.primeraLinea{
+    font-size: 20px;
+}
+
+#nombre{
+    font-weight: bold;
+    width: 50px;
+}
+
+#tablaConducta{
+    word-spacing: 200%;
+    min-height: 200px;
+    text-align: left;
+}
+
+th > fieldset{
+    text-align: left;
+    height: 170px;
+}
+
+legend{
+    text-shadow: 1px 1px 0 white;
+}
+
+fieldset:hover{
+    background-color: green;
+}
+
+input[type="submit"]{
+    transition: .5s transform;
+}
+
+input[type="submit"]:active{
+    transform: scale(200%);
+}
