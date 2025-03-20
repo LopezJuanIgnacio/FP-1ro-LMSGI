@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botones</title>
+    <script>
+      let letraDNI = () => {
+        const arr = [
+          "T",
+          "R",
+          "W",
+          "A",
+          "G",
+          "M",
+          "Y",
+          "F",
+          "P",
+          "D",
+          "X",
+          "B",
+          "N",
+          "J",
+          "Z",
+          "S",
+          "Q",
+          "V",
+          "H",
+          "L",
+          "C",
+          "K",
+          "E",
+        ];
+        let dni = parseInt(prompt("Escribe tu dni"));
+        let letraUsuario = prompt("Escribe tu letra designada").toUpperCase();
+
+        if (dni < 0 || dni > 99999999) {
+          alert("DNI no valido");
+          return;
+        }
+        let letraCorrecta = arr[dni % 23];
+        if (letraCorrecta == letraUsuario) alert("Correcto");
+        else alert("Incorrecto");
+      };
+
+      let factorial = () => {
+        let n = parseInt(prompt("Escribe tu numero"));
+        let resultado = 1;
+
+        if (n < 0 || n > 15) {
+          alert("Numero no valido");
+          return;
+        }
+
+        for (let i = 1; i <= n; i++) {
+          resultado *= i;
+        }
+        alert(`El factorial de ${n} es ${resultado}`);
+      };
+
+      let queDiaEsHoy = ()=>{
+        let hoy = new Date();
+        let dias = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];
+        let meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+        alert(`Hoy es ${dias[hoy.getDay()]}, ${hoy.getDate()} de ${meses[hoy.getMonth()]} de ${hoy.getFullYear()}`)
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="letraDNI()">>RUN letraDNI &lt;</button>
+    <button onclick="factorial()">>RUN factorial &lt;</button>
+    <button onclick="queDiaEsHoy()">>RUN queDiaEsHoy &lt;</button>
+  </body>
+</html>
