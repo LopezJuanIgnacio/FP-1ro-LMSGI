@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7.2</title>
+    <script>
+      let generaElementos = ()=>{
+        document.querySelectorAll("button").forEach((item)=> item.style.visibility =item.style.visibility == "visible" ? "hidden" : "visible");
+        document.querySelector("#contenido").innerHTML = `<h3>Esto es un &lt;h3></h3> 
+        <p>Primer &lt;p></p>
+        <p>Segundo &lt;p></p>
+        `;
+    }
+
+      let deletreo = () =>{
+        let palabra = prompt("Escribe una palabra");
+        let divContenido = document.querySelector("#contenido");
+        divContenido.innerHTML = `<h3>deletreo</h3> <p>${palabra}</p>`;
+        palabra = palabra.split(" ")[0].split("");
+        palabra.forEach((letra, i)=> divContenido.innerHTML += `<p>Letra ${i +1}: ${letra}</p>`);
+      }
+
+      let dimeCuantas = () =>{
+        let palabra = prompt("Escribe una palabra");
+        let caracter = prompt("Escribe un caracter a contar");
+        let divContenido = document.querySelector("#contenido");
+
+        while (caracter.length != 1) {
+          caracter = prompt("Escribe un caracter a contar");
+        }
+
+        divContenido.innerHTML = `<h3>dimeCuantas</h3> <p>${palabra}-${caracter}</p><p> ${palabra.split(caracter).length - 1} veces</p>`;
+      }
+
+        let arrayMoves = () =>{
+            let arr = ["Dos", "Tres", "Cuatro", "Cinco"];
+            arr.unshift("Cero","Uno");
+            arr.push("Seis", "Siete");
+            arr.splice(3,3)
+            arr.reverse();
+            console.log(arr);
+            arr.toString().split(",").forEach((item) =>alert(`==>${item}`));
+        }
+    </script>
+  </head>
+  <body>
+    <button style="visibility: visible;" onclick="generaElementos()">RUN generaElementos &lt;</button> <br>
+    <button style="visibility: hidden;" onclick="deletreo()">>RUN deletreo &lt;</button>
+    <button style="visibility: hidden;" onclick="dimeCuantas()">>RUN dimeCuantas &lt;</button>
+    <button style="visibility: hidden;" onclick="arrayMoves()">>RUN arrayMoves &lt;</button>
+    <div id="contenido"></div>
+  </body>
+</html>
