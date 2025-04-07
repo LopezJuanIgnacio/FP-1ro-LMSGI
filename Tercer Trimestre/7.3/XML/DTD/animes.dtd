@@ -1,0 +1,12 @@
+<!ELEMENT animes (anime+)>
+<!ELEMENT anime (titulo_original, titulo_ingles, tipo, episodios, nota, fecha_inicio, genero+, estudio+, imagen)>
+<!ATTLIST anime id CDATA #REQUIRED>
+<!ELEMENT titulo_original (#PCDATA)>
+<!ELEMENT titulo_ingles (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT episodios (#PCDATA)>
+<!ELEMENT nota (#PCDATA)>
+<!ELEMENT fecha_inicio (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>
+<!ELEMENT estudio (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>

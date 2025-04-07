@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE animes SYSTEM "DTD/animes.dtd">
+<animes>
+  <anime id="9541">
+    <titulo_original>Shingeki no Kyojin</titulo_original>
+    <titulo_ingles>Attack on Titan</titulo_ingles>
+    <tipo>Serie TV</tipo>
+    <episodios>89</episodios>
+    <nota>8.18</nota>
+    <fecha_inicio>07/04/2013</fecha_inicio>
+    <genero>Fantasía</genero>
+    <genero>Horror</genero>
+    <genero>Acción</genero>
+    <estudio>Wit Studio</estudio>
+    <estudio>MAPPA</estudio>
+    <imagen>https://cdn-eu.anidb.net/images/main/221067.jpg</imagen>
+  </anime>
+  <anime id="6107">
+    <titulo_original>Hagane no Renkinjutsushi</titulo_original>
+    <titulo_ingles>Fullmetal Alchemist: Brotherhood</titulo_ingles>
+    <tipo>Serie TV</tipo>
+    <episodios>64</episodios>
+    <nota>8.96</nota>
+    <fecha_inicio>05/04/2009</fecha_inicio>
+    <genero>Fantasía</genero>
+    <genero>Magia</genero>
+    <genero>Aventura</genero>
+    <estudio>BONES</estudio>
+    <imagen>https://cdn-eu.anidb.net/images/main/221536.jpg</imagen>
+  </anime>
+  <anime id="287">
+    <titulo_original>Shoujo Kakumei Utena</titulo_original>
+    <titulo_ingles>Revolutionary Girl Utena</titulo_ingles>
+    <tipo>Serie TV</tipo>
+    <episodios>39</episodios>
+    <nota>7.58</nota>
+    <fecha_inicio>02/04/1997</fecha_inicio>
+    <genero>Fantasía</genero>
+    <genero>Thriller</genero>
+    <genero>Comedia</genero>
+    <estudio>JCStaff</estudio>
+    <imagen>https://cdn-eu.anidb.net/images/main/269956.jpg</imagen>
+  </anime>
+  <anime id="22">
+    <titulo_original>Shinseiki Evangelion</titulo_original>
+    <titulo_ingles>Neon Genesis Evangelion</titulo_ingles>
+    <tipo>Serie TV</tipo>
+    <episodios>26</episodios>
+    <nota>8.23</nota>
+    <fecha_inicio>04/10/1995</fecha_inicio>
+    <genero>Acción</genero>
+    <genero>Ciencia ficción</genero>
+    <estudio>Gainax</estudio>
+    <imagen>https://cdn-eu.anidb.net/images/main/133461.jpg</imagen>
+  </anime>
+  <anime id="7">
+    <titulo_original>Mononoke Hime</titulo_original>
+    <titulo_ingles>Princess Mononoke</titulo_ingles>
+    <tipo>Película</tipo>
+    <episodios>1</episodios>
+    <nota>8.56</nota>
+    <fecha_inicio>12/07/1997</fecha_inicio>
+    <genero>Fantasía</genero>
+    <genero>Aventura</genero>
+    <estudio>Studio Ghibli</estudio>
+    <imagen>https://cdn-eu.anidb.net/images/main/221219.jpg</imagen>
+  </anime>
+  <anime id="75">
+    <titulo_original>Tenshi na Konamaiki</titulo_original>
+    <titulo_ingles>Cheeky Angel</titulo_ingles>
+    <tipo>Serie TV</tipo>
+    <episodios>50</episodios>
+    <nota>7.71</nota>
+    <fecha_inicio>07/04/2002</fecha_inicio>
+    <genero>Comedia</genero>
+    <genero>Romance</genero>
+    <estudio>TMS Entertainment</estudio>
+    <imagen>https://cdn-eu.anidb.net/images/main/224452.jpg</imagen>
+  </anime>
+  <anime id="23">
+    <titulo_original>Cowboy Bebop</titulo_original>
+    <titulo_ingles>Cowboy Bebop</titulo_ingles>
+    <tipo>Serie TV</tipo>
+    <episodios>26</episodios>
+    <nota>8.65</nota>
+    <fecha_inicio>03/04/1998</fecha_inicio>
+    <genero>Acción</genero>
+    <genero>Ciencia ficción</genero>
+    <estudio>Sunrise</estudio>
+    <imagen>https://cdn-eu.anidb.net/images/main/221595.jpg</imagen>
+  </anime>
+  <anime id="4521">
+    <titulo_original>Code Geass: Hangyaku no Lelouch</titulo_original>
+    <titulo_ingles>Code Geass: Lelouch of the Rebellion</titulo_ingles>
+    <tipo>Serie TV</tipo>
+    <episodios>50</episodios>
+    <nota>8.60</nota>
+    <fecha_inicio>06/10/2006</fecha_inicio>
+    <genero>Acción</genero>
+    <genero>Ciencia ficción</genero>
+    <estudio>Sunrise</estudio>
+    <imagen>https://cdn-eu.anidb.net/images/main/221573.jpg</imagen>
+  </anime>
+  <anime id="35">
+    <titulo_original>Love Hina</titulo_original>
+    <titulo_ingles>Love Hina</titulo_ingles>
+    <tipo>Serie TV</tipo>
+    <episodios>24</episodios>
+    <nota>6.79</nota>
+    <fecha_inicio>19/04/2000</fecha_inicio>
+    <genero>Comedia</genero>
+    <genero>Romance</genero>
+    <estudio>Xebec</estudio>
+    <imagen>https://cdn-eu.anidb.net/images/main/221733.jpg</imagen>
+  </anime>
+  <anime id="235">
+    <titulo_original>Bishoujo Senshi Sailor Moon</titulo_original>
+    <titulo_ingles>Pretty Soldier Sailor Moon</titulo_ingles>
+    <tipo>Serie TV</tipo>
+    <episodios>200</episodios>
+    <nota>7.00</nota>
+    <fecha_inicio>07/03/1992</fecha_inicio>
+    <genero>Comedia</genero>
+    <genero>Magia</genero>
+    <genero>Romance</genero>
+    <estudio>Toei Animation</estudio>
+    <imagen>https://cdn-eu.anidb.net/images/main/135847.jpg</imagen>
+  </anime>
+</animes>
