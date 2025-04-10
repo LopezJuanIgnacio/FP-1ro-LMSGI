@@ -30,13 +30,144 @@ h1{
     padding: 20px;
     flex-wrap: wrap;
 }
-#contenedor div{
+#contenedor .anime {
     display: flex;
+    width: 500px;
+    margin: 30px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+#contenedor .anime .info {
+    position: relative;
+    display: flex;
+    width: 500px;
     flex-direction: column;
-    min-width: 25vw;
+}
+
+#contenedor .anime .info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: #333;
+    border: 2px solid #ffcc00;
     border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#contenedor .anime .imgAnime {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    left: -30%;
+    z-index: 0;
+}
+
+#contenedor .anime .info .txt {
+    position: relative;
+    z-index: 3;
+    color: #ffcc00;
+    text-shadow: 1px 1px 2px #ffcc00;
+    padding: 20px; 
+}
+
+#contenedor .anime .info .estrella{
+    width: 15px;
+    height: 15px;
+}
+#contenedor .anime .info .estrella:nth-child(odd){
+    transform: rotateY(180deg);
+    position: relative;
+    left: -8px;
+}
+#contenedor .anime:hover .imgAnime {
+    animation: animacionImg 0.5s forwards;
+}
+
+#contenedor .anime .imgAnime {
+    animation: animacionImgReverse 0.5s forwards;
+}
+#contenedor .anime:hover  .info {
+   
+    animation: animacionInfo  0.5s forwards;
+}
+
+#contenedor .anime  .info {
+    animation: animacionInfoReverse 0.5s forwards;
+}
+
+#contenedor .anime:hover  .info .txt {
+   
+    animation: animacionTxt 0.5s forwards;
+}
+
+#contenedor .anime  .info .txt {
+    animation: animacionInfoTxt 0.5s forwards;
+}
+
+@keyframes animacionImg {
+    0% {
+        left: -30%;
+        z-index: 0;
+    }
+    50% {
+        left: 0%;
+        z-index: 2;
+    }
+    100% {
+        left: -25%;
+        z-index: 2;
+        border: #ffcc00 2px solid;
+    }
+}
+
+@keyframes animacionImgReverse {
+    0% {
+        left: -50%;
+        z-index: 2;
+        border: #ffcc00 2px solid;
+    }
+    50% {
+        left: 0%;
+        z-index: 0;
+    }
+    100% {
+        left: -25%;
+        z-index: 0;
+    }
+}
+
+@keyframes animacionInfo {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: 25%;
+    }
+}
+@keyframes animacionInfoReverse {
+    0% {
+        left: 25%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes animacionTxt {
+    0% {
+    }
+    100% {
+        color: #ffcc00;
+        text-shadow: 1px 1px 2px #ffcc00;
+        background-color: #33333388;
+        padding-bottom: 40px;
+        width: 100%;
+        height: 100%;
+    }
 }
