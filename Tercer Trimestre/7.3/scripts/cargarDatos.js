@@ -13,34 +13,35 @@ window.addEventListener("load", function () {
 
     let id = anime.getAttribute("id");
     let titulo_original =
-      anime.getElementsByTagName("titulo_original")[0].textContent;
+      anime.getElementsByTagName("titulo_original")[0].childNodes[0].nodeValue;
     let titulo_ingles =
-      anime.getElementsByTagName("titulo_ingles")[0].textContent;
-    let tipo = anime.getElementsByTagName("tipo")[0].textContent;
-    let episodios = anime.getElementsByTagName("episodios")[0].textContent;
-    let nota = anime.getElementsByTagName("nota")[0].textContent;
+      anime.getElementsByTagName("titulo_ingles")[0].childNodes[0].nodeValue;
+    let tipo = anime.getElementsByTagName("tipo")[0].childNodes[0].nodeValue;
+    let episodios = anime.getElementsByTagName("episodios")[0].childNodes[0].nodeValue;
+    let nota = anime.getElementsByTagName("nota")[0].childNodes[0].nodeValue;
     nota = parseInt(nota);
     let fecha_inicio =
-      anime.getElementsByTagName("fecha_inicio")[0].textContent;
+      anime.getElementsByTagName("fecha_inicio")[0].childNodes[0].nodeValue;
     let generos = "";
 
     Array.from(anime.getElementsByTagName("genero")).forEach((element, i) => {
       generos +=
-        element.textContent +
+        element.childNodes[0].nodeValue +
         (i < anime.getElementsByTagName("genero").length - 1 ? ", " : "");
     });
     let estudios = "";
 
     Array.from(anime.getElementsByTagName("estudio")).forEach((element, i) => {
       estudios +=
-        element.textContent +
+        element.childNodes[0].nodeValue +
         (i < anime.getElementsByTagName("estudio").length - 1 ? ", " : "");
     });
-    let imagen = anime.getElementsByTagName("imagen")[0].textContent;
+    let imagen = anime.getElementsByTagName("imagen")[0].childNodes[0].nodeValue; //Reemplazar por "./img/1.jpg" si no se puede usar las url
+    //Si se usa desde un servidor local (como yo venia haciendo), la cdn bloquea las peticiones. Ese es el error que mencionaba en clase 
 
     let estrellas = "";
     for (let j = 0; j < nota; j++) {
-        estrellas += `<img src="./img/estrella.png" alt="estrella" class="estrella">`;
+      estrellas += `<img src="./img/estrella.png" alt="estrella" class="estrella">`;
     }
     contenedor.innerHTML += `
         <div class="anime" id="${id}">
@@ -56,7 +57,7 @@ window.addEventListener("load", function () {
                     <p><strong>Estudios:</strong> ${estudios}</p>
                 </div>
             </div> 
-            <img src="./img/1.jpg" alt="${titulo_original}" class="imgAnime">
+            <img src="${imagen}" alt="${titulo_original}" class="imgAnime">
         </div>`;
   }
 });
