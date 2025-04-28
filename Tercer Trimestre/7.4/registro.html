@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Registro</title>
+  <meta name="description" content="HTML5, CSS3">
+  <meta name="author" content=" ">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="./scripts/form.js"></script>
+</head>
+<body>
+	
+	<form id="registro" method="post"  oninput="validar(event)" >
+		<header>
+		<img src="img/bg-formtitle-left.png" alt="mano izquierda" id="left_hand">
+		<h1>¡Regístrate!</h1>
+		<img src="img/bg-formtitle-right.png" alt="mano derecha" id="right_hand">
+		</header>
+		<ul>
+			<li>
+				<label for="nombre">Mi nombre es:</label>
+				<input type="text" id="nombre" name="nombre" required autofocus ><span><img src="./img/required.png" alt="required" /></span>
+			</li>
+			<li>
+				<label for="email">Mi email es:</label>
+				<input type="email" id="email" name="email" required multiple><span><img src="./img/required.png" alt="required" /></span>
+			</li>
+			<li>
+				<label for="recuerdame">Recuérdame en este equipo</label>
+				<input type="checkbox"  checked  id="recuerdame" name="recuerdame"> 
+			</li>
+			<li>
+				<label for="url">Mi dirección web es:</label>
+				<input type="url" id="url" name="url" placeholder="http://ejemplo.com">
+			</li>
+			<li>
+				<label for="password1">Me gustaría que mi contraseña fuera:</label>
+				<p>(al menos 6 caracteres, sin espacios)</p>
+				<input oninput="valContrasIguales(event)" type="text" id="password1" name="password1" required pattern=".{6,}" title="La contraseña debe tener al menos 6 caracteres y no contener espacios" oninput="this.value = this.value.replace(/\s/g, '')"><span><img src="./img/required.png" alt="required" /></span>
+			</li>
+			<li>
+				<label for="password2">Mi contraseña repetida es:</label>
+				<input oninput="valContrasIguales(event)" type="text" id="password2" pattern=".{6,}"  name="password2" required ><span><img src="./img/required.png" alt="required" /></span>
+			</li>
+			<li>
+				<label for="conocimientos">En una escala de 1 a 10, mis conocimientos de HTML5 son:</label>
+				<input oninput="validarConocimientos(event)" type="number" min="1" max="10"  id="conocimientos" name="conocimientos">
+			</li>
+			<li>
+				<label for="fechaInicio">Por favor, inicia mi suscripción el día:</label>
+				<input type="date" id="fechaInicio" name="fechaInicio" placeholder="dd/mm/aaaa" required ><span><img src="./img/required.png" alt="required" /></span>
+			</li>
+			<li>
+				<label for="cantidad">Me gustaría recibir <input type="number" min="0" max="5" name="cantidad" id="cantidad" value="1"> copias de <cite>El manual de HTML5</cite>.</label>
+			</li>
+			<li>
+				<label for="tambienCSS3">También regístrame para <cite>El manual de CSS3</cite></label>
+				<input id="tambienCSS3" name="tambienCSS3" type="checkbox">
+			</li>
+			<li>
+				<input type="submit" id="registro-submit" value="Envíame"/>
+			</li>
+		</ul>
+	</form>
+	
+</body>
+</html>
