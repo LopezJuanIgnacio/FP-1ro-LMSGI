@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Canvas</title>
+    <script src="./scripts/canvas.js"></script>
+  </head>
+  <body>
+    <canvas
+      id="canvas1"
+      width="300"
+      height="300"
+      style="background-color: lightgrey"
+    ></canvas>
+    <canvas id="canvasImg" width="300" height="300"></canvas> <br />
+    <p>Nro discos <input type="number" id="nroDiscos" /></p>
+    <p>
+      Origen
+      <select name="Origen" id="Origen">
+        <option selected>Elige...</option>
+        <option value="1">A</option>
+        <option value="2">B</option>
+        <option value="3">C</option>
+      </select>
+    </p>
+    <p>
+      Destino
+      <select name="Destino" id="Destino">
+        <option selected>Elige...</option>
+        <option value="1">A</option>
+        <option value="2">B</option>
+        <option value="3">C</option>
+      </select>
+    </p>
+    <p>
+      <button
+        style="border: inset 1px gray; background-color: greenyellow"
+        id="btnResolver"
+      >
+        Resolver
+      </button>
+      <button
+        style="border: inset 1px gray; background-color: red"
+        id="btnReset"
+      >
+        Reset
+      </button>
+    </p>
+    <p id="resultado"></p>
+    <canvas id="canvas2" width="400" height="300" style="border: 1px solid black;"></canvas>
+  </body>
+</html>
