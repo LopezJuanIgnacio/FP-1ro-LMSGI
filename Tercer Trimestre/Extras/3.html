@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <script>
+        function calcular() {
+            let sum = 0;
+            let txt = ""
+            const numero = parseInt(document.getElementById("numero").value);
+            const resultadoDiv = document.getElementById("resultado");
+            const rango =parseInt(document.getElementById("rango").value);
+
+            if (isNaN(numero) || numero <= 0) {
+                resultadoDiv.innerHTML = "Por favor, introduce un número válido.";
+                return;
+            }
+            if(rango){
+                for(let i = 1; i <= numero; i++){
+                    txt += " " + i + "² +";
+                    sum += i*i;
+                }
+            }
+            else{
+                for(let i = numero; i > 0; i--){
+                    txt += " " + i + "² +";
+                    sum += i*i;
+                }
+            }
+            txt = txt.slice(0, -1);
+            txt += "= " + sum;
+            resultadoDiv.innerHTML = txt;
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="numero" placeholder="Introduce un número">
+    <button id="calcular" onclick="calcular()">Calcular</button>
+    <div id="resultado"></div>
+    <br><br>
+    <input type="range" id="rango" min="0" max="1" step="1" value="1">
+</body>
+</html>

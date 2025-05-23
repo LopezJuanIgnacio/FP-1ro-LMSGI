@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Multiplicador de Factores</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      label {
+        margin-right: 10px;
+      }
+      input[type="number"] {
+        width: 80px;
+      }
+      canvas {
+        border: 1px solid #ccc;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="factor1">Factor 1:</label>
+    <input type="number" id="factor1" min="10" max="9999" value="10" required />
+    <label for="factor2">Factor 2:</label>
+    <input type="number" id="factor2" min="10" max="9999" value="10" required />
+    <br />
+    <canvas id="resultadoCanvas" width="600" height="600"></canvas> <br />
+    <button onclick="dibujarResultado()">Calcular</button>
+
+    <script>
+      let fase = 0;
+      let arrays = [];
+      const factor1 = document.getElementById("factor1");
+      const factor2 = document.getElementById("factor2");
+      const canvas = document.getElementById("resultadoCanvas");
+      const ctx = canvas.getContext("2d");
+
+      function dibujarTabla() {
+        fase = 0;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        const val1 = parseInt(factor1.value, 10);
+        const lVal1 = factor1.value.length;
+        const val2 = parseInt(factor2.value, 10);
+        const lVal2 = factor2.value.length;
+        arrays = [];
+        for (let i = 0; i < lVal1 + lVal2; i++) {
+          arrays.push([]);
+        }
+        if (!isNaN(val1) && !isNaN(val2)) {
+          for (let i = 0; i < lVal1 + 1; i++) {
+            for (let j = 0; j < lVal2 + 1; j++) {
+              ctx.strokeRect(150 + i * 50, 50 + j * 50, 50, 50);
+              ctx.stroke();
+              if (i !== lVal1 && j !== 0) {
+                ctx.beginPath();
+                ctx.moveTo(150 + i * 50, 50 + j * 50 + 50); // esquina inferior izquierda
+                ctx.lineTo(150 + i * 50 + 50, 50 + j * 50); // esquina superior derecha
+                ctx.stroke();
+              }
+            }
+          }
+        }
+        ctx.font = "20px Arial";
+        ctx.fillStyle = "red";
+        ctx.fillText("X", 170 + lVal1 * 50, 85);
+        for (let i = 0; i < lVal1; i++) {
+          ctx.fillText(factor1.value[i], 170 + i * 50, 85);
+        }
+        for (let i = 0; i < lVal2; i++) {
+          ctx.fillText(factor2.value[i], 170 + 50 * lVal1, 125 + i * 50);
+        }
+        fase = 1;
+      }
+
+      function dibujarResultado() {
+        if (fase === 0) return;
+        if (fase > 2) {
+          dibujarTabla();
+          return;
+        }
+
+        const val1 = parseInt(factor1.value, 10);
+        const lVal1 = factor1.value.length;
+        const val2 = parseInt(factor2.value, 10);
+        const lVal2 = factor2.value.length;
+
+        if (fase === 1) {
+          let x = 0;
+          if (!isNaN(val1) && !isNaN(val2)) {
+            for (let i = 0; i < lVal1 + 1; i++) {
+              for (let j = 0; j < lVal2 + 1; j++) {
+                ctx.font = "16px Arial";
+                ctx.fillStyle = "black";
+                if (i === lVal1 || j === 0) continue;
+                const digito1 = parseInt(factor1.value[i], 10);
+                const digito2 = parseInt(factor2.value[j - 1], 10);
+                x = digito1 * digito2;
+                let decenas = Math.floor(x / 10);
+                let unidades = x % 10;
+                ctx.fillText(decenas, 160 + i * 50, 75 + j * 50);
+                ctx.fillText(unidades, 180 + i * 50, 95 + j * 50);
+                arrays[i + j - 1].push(decenas);
+                arrays[i + j].push(unidades);
+              }
+            }
+          }
+        }
+        
+        if (fase === 2) {
+          let sum = 0;
+          let arrRes = [];
+          for (let i = arrays.length - 1; i >= 0; i--) {
+            for (let j = 0; j < arrays[i].length; j++) {
+              sum += arrays[i][j];
+            }
+            let decenas = Math.floor(sum / 10);
+            let unidades = sum % 10;
+            sum = 0;
+            if (i === 0) {
+              arrRes.unshift(unidades);
+              arrRes.unshift(decenas);
+            } else {
+              arrays[i - 1].push(decenas);
+              arrRes.unshift(unidades);
+            }
+          }
+          arrRes.shift();
+          console.log(arrRes);
+
+          ctx.font = "20px Arial";
+          ctx.fillStyle = "black";
+          for (let i = 0; i < lVal1; i++) {
+            ctx.fillText(arrRes[arrRes.length - 1 - i], 175 + i * 50, 125 + lVal2 * 50);
+          }
+          for (let i = 0; i < lVal2; i++) {
+            ctx.fillText(arrRes[i], 125, 135 + i * 50);
+          }
+        }
+        fase++;
+      }
+
+      factor1.addEventListener("input", dibujarTabla);
+      factor2.addEventListener("input", dibujarTabla);
+    </script>
+  </body>
+</html>
