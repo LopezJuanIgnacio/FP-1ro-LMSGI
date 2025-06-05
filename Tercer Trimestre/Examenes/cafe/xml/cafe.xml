@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<examen>
+  <bebidas lang="es">
+    <bebida cafe="true">
+      <nombre>Solo</nombre>
+      <descrip>Café intenso y concentrado, servido en taza pequeña.</descrip>
+      <ingredientes>
+        <ingre min="25" max="30">Infusión de café</ingre>
+      </ingredientes>
+      <pic>4</pic>
+    </bebida>
+    <bebida cafe="true">
+      <nombre>Solo largo</nombre>
+      <descrip>Versión más suave del café solo, con más agua.</descrip>
+      <ingredientes>
+        <ingre min="100" max="120">Infusión de café</ingre>
+      </ingredientes>
+      <pic>8</pic>
+    </bebida>
+    <bebida cafe="true">
+      <nombre>Café con leche</nombre>
+      <descrip>Mitad café, mitad leche caliente, suave y cremoso.</descrip>
+      <ingredientes>
+        <ingre tip="30">Infusión de café</ingre>
+        <ingre min="20" max="30">Leche</ingre>
+      </ingredientes>
+      <pic>15</pic>
+    </bebida>
+    <bebida cafe="true">
+      <nombre>Cortado</nombre>
+      <descrip>Café solo con un toque de leche caliente para suavizar su sabor.</descrip>
+      <ingredientes>
+        <ingre tip="30">Infusión de café</ingre>
+        <ingre min="20" max="30">Leche</ingre>
+      </ingredientes>
+      <pic>16</pic>
+    </bebida>
+    <bebida cafe="true">
+      <nombre>Capuchino</nombre>
+      <descrip>Equilibrio entre solo, leche caliente y espuma de leche.</descrip>
+      <ingredientes>
+        <ingre tip="30">Infusión de café</ingre>
+        <ingre tip="60">Leche</ingre>
+        <ingre tip="60">Espuma de leche</ingre>
+      </ingredientes>
+      <pic>23</pic>
+    </bebida>
+    <bebida cafe="true">
+      <nombre>Solo manchado</nombre>
+      <descrip>Café solo "manchado" con una pequeña cantidad de espuma de leche.</descrip>
+      <ingredientes>
+        <ingre tip="30">Infusión de café</ingre>
+        <ingre min="10" max="15">Espuma de leche</ingre>
+      </ingredientes>
+      <pic>42</pic>
+    </bebida>
+    <bebida cafe="true">
+      <nombre>Mocachino</nombre>
+      <descrip>Combinación de café, chocolate y leche, con un toque dulce.</descrip>
+      <ingredientes>
+        <ingre tip="30">Infusión de café</ingre>
+        <ingre tip="100">Leche</ingre>
+        <ingre min="20" max="30">Chocolate líquido</ingre>
+      </ingredientes>
+      <pic>46</pic>
+    </bebida>
+    <bebida cafe="false">
+      <nombre>Chocoleche</nombre>
+      <descrip>Chocolate caliente suave, preparado con leche.</descrip>
+      <ingredientes>
+        <ingre min="150" max="180">Leche</ingre>
+        <ingre min="20" max="30">Chocolate líquido</ingre>
+      </ingredientes>
+      <pic>69</pic>
+    </bebida>
+    <bebida cafe="false">
+      <nombre>Té verde</nombre>
+      <descrip>Infusión ligera y vegetal, rica en antioxidantes.</descrip>
+      <ingredientes>
+        <ingre tip="200">Infusión de té</ingre>
+      </ingredientes>
+      <pic>79</pic>
+    </bebida>
+  </bebidas>
+  
+  <bebidas lang="it">
+    <bebida cafe="true">
+      <nombre>Espresso</nombre>
+      <descrip>Caffè intenso e concentrato, servito in una tazzina.</descrip>
+      <ingredientes>
+        <ingre min="25" max="30">Infuso di caffè</ingre>
+      </ingredientes>
+      <pic>4</pic>
+    </bebida>
+    <bebida cafe="true">
+      <nombre>Espresso lungo</nombre>
+      <descrip>Una versione più delicata dell'espresso, con più acqua.</descrip>
+      <ingredientes>
+        <ingre min="100" max="120">Infuso di caffè</ingre>
+      </ingredientes>
+      <pic>8</pic>
+    </bebida>
+    <bebida cafe="true">
+      <nombre>Latte macchiato</nombre>
+      <descrip>Metà caffè, metà latte caldo, liscio e cremoso.</descrip>
+      <ingredientes>
+        <ingre tip="30">Infuso di caffè</ingre>
+        <ingre min="20" max="30">Latte</ingre>
+      </ingredientes>
+      <pic>15</pic>
+    </bebida>
+    <bebida cafe="true">
+      <nombre>Caffè macchiato</nombre>
+      <descrip>Espresso con un tocco di latte caldo per ammorbidirne il sapore.</descrip>
+      <ingredientes>
+        <ingre tip="30">Infuso di caffè</ingre>
+        <ingre min="20" max="30">Latte</ingre>
+      </ingredientes>
+      <pic>16</pic>
+    </bebida>
+    <bebida cafe="true">
+      <nombre>Cappuccino</nombre>
+      <descrip>Equilibrio tra espresso, latte caldo e schiuma di latte.</descrip>
+      <ingredientes>
+        <ingre tip="30">Infuso di caffè</ingre>
+        <ingre tip="60">Latte</ingre>
+        <ingre tip="60">Schiuma di latte</ingre>
+      </ingredientes>
+      <pic>23</pic>
+    </bebida>
+    <bebida cafe="true">
+      <nombre>Espresso macchiato</nombre>
+      <descrip>Mi amore, mi amore, espresso macchiato, espresso macchiato por favore...</descrip>
+      <ingredientes>
+        <ingre tip="30">Infuso di caffè</ingre>
+        <ingre min="10" max="15">Schiuma di latte</ingre>
+      </ingredientes>
+      <pic>42</pic>
+    </bebida>
+    <bebida cafe="true">
+      <nombre>Mochaccino</nombre>
+      <descrip>Combinazione di caffè, cioccolato e latte, con un tocco dolce.</descrip>
+      <ingredientes>
+        <ingre tip="30">Infuso di caffè</ingre>
+        <ingre tip="100">Latte</ingre>
+        <ingre min="20" max="30">Cioccolato liquido</ingre>
+      </ingredientes>
+      <pic>46</pic>
+    </bebida>
+    <bebida cafe="false">
+      <nombre>Latte al cioccolato</nombre>
+      <descrip>Cioccolata calda liscia, preparata con latte.</descrip>
+      <ingredientes>
+        <ingre min="150" max="180">Latte</ingre>
+        <ingre min="20" max="30">Cioccolato liquido</ingre>
+      </ingredientes>
+      <pic>69</pic>
+    </bebida>
+    <bebida cafe="false">
+      <nombre>Tè veerde</nombre>
+      <descrip>Infuso leggero e vegetale, ricco di antiossidanti.</descrip>
+      <ingredientes>
+        <ingre tip="200">Infuso di tè</ingre>
+      </ingredientes>
+      <pic>79</pic>
+    </bebida>
+  </bebidas>
+  
+  <pics>
+    <pic_src id="4">imagenes/4.png</pic_src>
+    <pic_src id="8">imagenes/8.png</pic_src>
+    <pic_src id="15">imagenes/15.png</pic_src>
+    <pic_src id="16">imagenes/16.png</pic_src>
+    <pic_src id="23">imagenes/23.png</pic_src>
+    <pic_src id="42">imagenes/42.png</pic_src>
+    <pic_src id="46">imagenes/46.png</pic_src>
+    <pic_src id="69">imagenes/69.png</pic_src>
+    <pic_src id="79">imagenes/79.png</pic_src>
+  </pics>
+</examen>
